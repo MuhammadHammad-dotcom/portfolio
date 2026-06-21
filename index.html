@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<!--
+	Optimized & Re-Engineered by Muhammad Hammad (Elite Quantitative Core Terminal v4.0)
+	Clean HTML5 / Premium Modern Architecture
+-->
+<html>
+	<head>
+		<title>Muhammad Hammad | Quantitative Finance & Computational Infrastructure</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Premium Dark SaaS Theme Configuration */
+			body, #wrapper { background-color: #030712 !important; color: #9ca3af !important; font-family: 'SF Pro Display', -apple-system, system-ui, sans-serif !important; }
+			h1, h2, h3, h4, .logo, #nav .links li.active a { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif !important; letter-spacing: -0.025em; }
+			
+			/* ABSOLUTE FIX FOR IMAGES LINE MARKERS: Eradicating legacy borders from base templates */
+			.post::before, .post::after, .post.featured::before, .post.featured::after, 
+			header::before, header::after, header.major::before, header.major::after,
+			.post header::before, .post header::after, #main::before { display: none !important; content: none !important; border: none !important; background: none !important; }
+			hr { display: none !important; }
+			
+			/* Hero Matrix Section Styling */
+			#intro { background: radial-gradient(ellipse at top, #0f172a 0%, #030712 85%) !important; border-bottom: 1px solid #1f2937; padding: 8rem 4rem !important; text-align: center; position: relative; }
+			#intro h1 { font-size: 5rem !important; font-weight: 900; background: linear-gradient(to right, #ffffff 40%, #38bdf8 70%, #0ea5e9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; letter-spacing: -0.05em; }
+			#intro p { color: #9ca3af !important; max-width: 52rem; margin: 0 auto 1.5rem auto; font-size: 1.25rem; line-height: 1.8; font-weight: 400; }
+			
+			/* Ultra-Premium Button Engineering */
+			.button { background: rgba(56, 189, 248, 0.03) !important; box-shadow: inset 0 0 0 1px rgba(56, 189, 248, 0.4) !important; color: #38bdf8 !important; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important; font-weight: 600 !important; border-radius: 8px; text-transform: none; letter-spacing: 0px; font-size: 0.9rem !important; height: 3.2rem !important; line-height: 3.2rem !important; padding: 0 2rem !important; }
+			.button:hover { background: #38bdf8 !important; color: #030712 !important; box-shadow: 0 0 30px rgba(56, 189, 248, 0.35) !important; transform: translateY(-2px); }
+			.button.large { background: #38bdf8 !important; color: #030712 !important; font-weight: 700 !important; box-shadow: 0 4px 20px rgba(56, 189, 248, 0.15) !important; }
+			.button.large:hover { background: transparent !important; color: #38bdf8 !important; box-shadow: inset 0 0 0 1px #38bdf8 !important; }
+			
+			/* Navigation Elements Upgrade */
+			#nav { background-color: #030712 !important; border-top: 1px solid #1f2937; border-bottom: 1px solid #1f2937; }
+			#nav .links li a { text-transform: none; font-weight: 500; font-size: 0.95rem; letter-spacing: 0; color: #6b7280 !important; }
+			#nav .links li.active a { color: #38bdf8 !important; border-bottom-color: #38bdf8 !important; background: transparent !important; font-weight: 600; }
+			#nav .icons a { color: #4b5563 !important; transition: color 0.2s ease; }
+			#nav .icons a:hover { color: #38bdf8 !important; }
+			
+			/* Main Content Console Architecture */
+			#main { background-color: #030712 !important; border: none !important; padding: 4rem 2rem !important; max-width: 78rem !important; margin: 0 auto; }
+			
+			/* High-End Card Layout System */
+			.project-grid { display: grid; grid-template-columns: 1fr; gap: 4rem; width: 100%; }
+			.post { border: 1px solid #1f2937 !important; padding: 4.5rem !important; margin-bottom: 0; background: linear-gradient(145deg, #0b1329 0%, #070c18 100%) !important; border-radius: 16px; box-shadow: 0 20px 40px -15px rgba(0,0,0,0.7); width: 100% !important; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); position: relative; overflow: hidden; }
+			.post:hover { border-color: rgba(56, 189, 248, 0.4) !important; box-shadow: 0 30px 60px -20px rgba(56, 189, 248, 0.1); transform: translateY(-4px); }
+			
+			/* Metrics HUD Badges */
+			.metrics-hud { display: flex; gap: 1.5rem; margin-bottom: 1.5rem; font-family: monospace; font-size: 0.8rem; color: #6b7280; text-transform: uppercase; }
+			.metrics-hud span strong { color: #10b981; }
+			
+			.post h2 { font-size: 2.8rem !important; font-weight: 800; line-height: 1.15; margin-top: 0; margin-bottom: 1.5rem; letter-spacing: -0.03em; }
+			.post h2 a { color: #ffffff !important; text-decoration: none; }
+			.post h3 { color: #38bdf8 !important; margin-top: 3rem; font-size: 1.25rem; font-weight: 600; text-transform: none; letter-spacing: 0; margin-bottom: 1rem; }
+			
+			/* Image Layout Standardizations */
+			.post .image { display: block; width: 100%; height: 440px; overflow: hidden; border-radius: 12px; border: 1px solid #1f2937; margin: 2.5rem 0; box-shadow: 0 25px 55px -25px rgba(0,0,0,0.8); background: #030712; position: relative; }
+			.post .image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); position: absolute; top: 0; left: 0; }
+			.post .image:hover img { transform: scale(1.03); }
+			
+			/* Premium Quantitative Code/Terminal Block Overhaul */
+			code { background-color: rgba(56, 189, 248, 0.08) !important; color: #38bdf8 !important; border: 1px solid rgba(56, 189, 248, 0.2); padding: 0.2rem 0.5rem; border-radius: 6px; font-weight: 500; font-family: monospace !important; font-size: 0.9em; }
+			blockquote { border-left: 2px solid #38bdf8 !important; color: #cbd5e1 !important; background: #030712 !important; padding: 1.75rem; border-radius: 8px; margin: 2.5rem 0; font-style: normal; border-top: none; border-bottom: none; border-right: none; box-shadow: inset 4px 0 0 rgba(56, 189, 248, 0.1); }
+			
+			/* Tech Badge Matrix Layout */
+			.tech-container { margin: 1.5rem 0 2.5rem 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+			.tech-tag { display: inline-block; background: rgba(56, 189, 248, 0.04); color: #38bdf8; padding: 0.4rem 1rem; font-size: 0.75rem; font-weight: 600; border-radius: 9999px; border: 1px solid rgba(56, 189, 248, 0.15); text-transform: none; }
+			
+			/* FOOTER MANAGEMENT: Absolute Grid Alignment & Fixed Proportions */
+			#footer { background-color: #02040a !important; border-top: 1px solid #1f2937; padding: 6rem 4rem !important; max-width: 78rem !important; margin: 0 auto; border-radius: 24px 24px 0 0; display: flex; gap: 4rem; }
+			#footer section:first-child { flex: 1 1 55%; padding-right: 0; }
+			
+			#footer .split.contact { flex: 1 1 40%; display: flex; flex-direction: column; gap: 2rem; padding-left: 3rem; border-left: 1px solid #1f2937; }
+			#footer h3 { color: #ffffff !important; font-weight: 600; font-size: 1.4rem; letter-spacing: -0.02em; margin-bottom: 2rem; }
+			
+			/* Absolute alignment structural items preventing displacement */
+			.split.contact section { padding: 0 !important; margin: 0 !important; border: none !important; width: 100% !important; display: block !important; }
+			.split.contact h3 { margin-bottom: 0.5rem !important; font-size: 0.85rem !important; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7280 !important; font-weight: 700; }
+			.split.contact p { margin: 0 !important; padding: 0 !important; line-height: 1.6; font-size: 1.1rem; color: #e5e7eb !important; display: block !important; }
+			.split.contact p a { color: #38bdf8 !important; text-decoration: none; transition: opacity 0.2s; }
+			.split.contact p a:hover { opacity: 0.8; }
+			
+			/* Secure Icon Sets */
+			.split.contact .icons.alt { margin-top: 0.5rem !important; padding: 0 !important; list-style: none; display: flex; gap: 1.25rem; }
+			.split.contact .icons.alt a { color: #9ca3af !important; font-size: 1.2rem; transition: color 0.2s; }
+			.split.contact .icons.alt a:hover { color: #38bdf8 !important; }
+			
+			/* Form Processing Elements */
+			input[type="text"], input[type="email"], textarea { background-color: #030712 !important; border: 1px solid #1f2937 !important; color: #ffffff !important; border-radius: 8px; padding: 0.75rem 1rem; transition: all 0.3s ease; }
+			input[type="text"]:focus, input[type="email"]:focus, textarea:focus { border-color: #38bdf8 !important; box-shadow: 0 0 15px rgba(56, 189, 248, 0.1); }
+			label { color: #9ca3af !important; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+			
+			#copyright { border-top: 1px solid #1f2937; padding-top: 3rem; margin-top: 4rem; color: #4b5563 !important; text-align: center; font-size: 0.85rem; width: 100%; }
+			#copyright a { color: #4b5563 !important; }
+			
+			@media screen and (max-width: 1100px) {
+				#footer { flex-direction: column; gap: 4rem; padding: 4rem 2rem !important; }
+				#footer .split.contact { padding-left: 0; border-left: none; }
+			}
+			@media screen and (max-width: 736px) {
+				#intro h1 { font-size: 3.2rem !important; }
+				.post { padding: 2rem !important; }
+				.post h2 { font-size: 1.8rem !important; }
+				.post .image { height: 260px; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Main Wrapper Console Base -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Premium Interactive Intro Header Matrix -->
+					<div id="intro">
+						<h1>MUHAMMAD HAMMAD</h1>
+						<p style="font-weight: 600; color: #38bdf8 !important; letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 2rem;">Computational Finance Specialist &bull; Quantitative Strategy Architect</p>
+						<p>Engineering math-driven algorithmic engines and structured enterprise credit underwriting platforms to transform market anomalies into predictive operational vectors.</p>
+						<ul class="actions" style="margin-top: 3rem;">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Initialize Systems Inventory</a></li>
+						</ul>
+					</div>
+
+				<!-- Header Core Branding -->
+					<header id="header">
+						<a href="index.html" class="logo" style="letter-spacing: 1px; font-weight: 700;">QUANT CORE CONSOLE v4.0</a>
+					</header>
+
+				<!-- System Navigation Terminal -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Production Engines Portfolio</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/MuhammadHammad-dotcom" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/muhammad-hammad-95a048320" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Portfolio Core Matrix -->
+					<div id="main">
+						
+						<!-- Comprehensive System Layout Grid -->
+						<div class="project-grid">
+
+							<!-- DEPLOYED SYSTEM 01: NEURAL-TRADE PRO TERMINAL -->
+							<article class="post">
+								<div class="metrics-hud">
+									<span>STATUS: <strong>LIVE</strong></span> &bull; <span>ACCURACY SCORE: <strong>94.2%</strong></span> &bull; <span>OPTIMIZATION: <strong>150 ENSEMBLE NODES</strong></span>
+								</div>
+								
+								<h2><a href="https://ai-algorithmic-trading-terminal-knxio6ihaq4qldgeta7vwp.streamlit.app/" target="_blank">Neural-Trade Pro: High-Dimensional Asset Analytics Terminal</a></h2>
+								
+								<div class="tech-container">
+									<span class="tech-tag">Python Core</span>
+									<span class="tech-tag">Random Forest Ensembles</span>
+									<span class="tech-tag">Stochastic RSI Modulations</span>
+									<span class="tech-tag">Rolling Min-Max Volatility Bounds</span>
+									<span class="tech-tag">Asynchronous yFinance APIs</span>
+									<span class="tech-tag">Plotly Data UX</span>
+								</div>
+								
+								<p>An institutional-grade computational trading interface designed to isolate directional market vectors, execute dynamic multi-asset validation (Crypto, Precious Metals, Forex), and stream mathematical risk metrics in high-volatility environments.</p>
+								
+								<!-- Premium Algorithmic Display -->
+								<a href="https://ai-algorithmic-trading-terminal-knxio6ihaq4qldgeta7vwp.streamlit.app/" target="_blank" class="image">
+									<img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRron801XfpH6exMybPaQjTLRMyjhQXA_kzBMBdfO41Ux6iGXXj3jMTsWH1bWEebfI4PbJbbKDf_QE3gwQ" alt="Neural-Trade Computing System Overview" />
+								</a>
+								
+								<h3>Architectural Pipeline Spec</h3>
+								<p>Engineered zero-latency data ingestion framework utilizing multi-threaded hooks to capture raw exchange pricing streams. The underlying engine transforms raw candles into custom feature tensors, isolating dynamic resistance bounds and real-time stochastic indicators to prevent false momentum breakouts.</p>
+								
+								<blockquote>
+									<strong>Core Algorithmic Matrix:</strong> Predictive workflows utilize a refined ensemble processing structure running 150 parallel statistical trees to map historical asset liquidity into definitive direction probability vectors.
+								</blockquote>
+
+								<ul class="actions" style="margin-top: 2.5rem;">
+									<li><a href="https://ai-algorithmic-trading-terminal-knxio6ihaq4qldgeta7vwp.streamlit.app/" target="_blank" class="button large">Launch Live Trading Terminal</a></li>
+								</ul>
+							</article>
+
+							<!-- DEPLOYED SYSTEM 02: INTELRISK UNDERWRITING MATRIX -->
+							<article class="post">
+								<div class="metrics-hud">
+									<span>TYPE: <strong>RISK ENGINE</strong></span> &bull; <span>METRIC PERSISTENCE: <strong>ST.SESSION_STATE</strong></span> &bull; <span>DATA VISUALS: <strong>3D SCATTER</strong></span>
+								</div>
+								
+								<h2><a href="https://intelrisk-lend-57l8ubfqbnm5wckuqsufsh.streamlit.app/" target="_blank">IntelRisk: Predictive Credit Underwriting & Risk Engine</a></h2>
+								
+								<div class="tech-container">
+									<span class="tech-tag">Scikit-Learn Infrastructure</span>
+									<span class="tech-tag">Structured Processing Pipelines</span>
+									<span class="tech-tag">Isolated Session States</span>
+									<span class="tech-tag">High-Dimensional Radar Profiles</span>
+								</div>
+								
+								<p>An advanced analytical underwriting engine built to process granular consumer datasets, formulate predictive default metrics, and optimize institutional portfolio yields using advanced risk classification clusters.</p>
+								
+								<!-- Premium Credit Matrix Display -->
+								<a href="https://intelrisk-lend-57l8ubfqbnm5wckuqsufsh.streamlit.app/" target="_blank" class="image">
+									<img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSTz-7jz-P__r3m0TPMHNuZmfiQ4ikqh0yBccajvhyLV143w128ps8b362SS6fH1EW74ehr4vxhmCSvOtA" alt="IntelRisk Production Grid System" />
+								</a>
+								
+								<h3>Operational Architecture Spec</h3>
+								<p>IntelRisk removes automated underwriting variance by checking debt ratios and income lines against historical probability matrix standards. The application leverages custom-isolated processing environments to prevent data leakage between analysis runs, displaying high-dimensional cluster spreads and expected yield variations directly onto premium interface modules.</p>
+								
+								<ul class="actions" style="margin-top: 2.5rem;">
+									<li><a href="https://intelrisk-lend-57l8ubfqbnm5wckuqsufsh.streamlit.app/" target="_blank" class="button">Initialize Underwriting Matrix</a></li>
+								</ul>
+							</article>
+
+						</div>
+					</div>
+
+				<!-- Absolute Aligned Institutional Footer Console -->
+					<footer id="footer">
+						<section>
+							<h3 style="color: #ffffff !important;">Transmission Gateway</h3>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Identity / Institution</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Communications Node Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Strategic Parameters / Requirements</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions" style="margin-top: 2rem;">
+									<li><input type="submit" value="Dispatch Secure Message" class="button primary" style="background: #38bdf8 !important; color: #030712 !important; border: none !important; font-weight: 700 !important; cursor: pointer;" /></li>
+								</ul>
+							</form>
+						</section>
+						
+						<!-- FIXED ALIGNMENT CONSOLE BLOCK (Resolves image_085944.png grid issues) -->
+						<section class="split contact">
+							<section>
+								<h3>Operations Headquarters</h3>
+								<p>Karachi, Sindh, Pakistan</p>
+							</section>
+							<section>
+								<h3>Direct Access Port</h3>
+								<p><a href="mailto:mhammadmnaeem29@gmail.com">mhammadmnaeem29@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Distributed Networks</h3>
+								<ul class="icons alt">
+									<li><a href="https://github.com/MuhammadHammad-dotcom" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/muhammad-hammad-95a048320" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- System Baseline Core Info -->
+					<div id="copyright">
+						<ul><li>&copy; Muhammad Hammad &bull; All System Rights Reserved</li><li>Base Framework: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Production System Core Controllers -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
