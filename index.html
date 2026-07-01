@@ -1,278 +1,397 @@
 <!DOCTYPE HTML>
 <!--
-	Optimized & Re-Engineered by Muhammad Hammad (Elite Quantitative Core Terminal v4.0)
-	Clean HTML5 / Premium Modern Architecture
+    Elite Quantitative Portfolio Terminal v7.0 - Absolute Enterprise Blueprint
+    Engineered by Muhammad Hammad | Ultimate Real-Time Automated Infrastructure
 -->
 <html>
-	<head>
-		<title>Muhammad Hammad | Quantitative Finance & Computational Infrastructure</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			/* Premium Dark SaaS Theme Configuration */
-			body, #wrapper { background-color: #030712 !important; color: #9ca3af !important; font-family: 'SF Pro Display', -apple-system, system-ui, sans-serif !important; }
-			h1, h2, h3, h4, .logo, #nav .links li.active a { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif !important; letter-spacing: -0.025em; }
-			
-			/* ABSOLUTE FIX FOR IMAGES LINE MARKERS: Eradicating legacy borders from base templates */
-			.post::before, .post::after, .post.featured::before, .post.featured::after, 
-			header::before, header::after, header.major::before, header.major::after,
-			.post header::before, .post header::after, #main::before { display: none !important; content: none !important; border: none !important; background: none !important; }
-			hr { display: none !important; }
-			
-			/* Hero Matrix Section Styling */
-			#intro { background: radial-gradient(ellipse at top, #0f172a 0%, #030712 85%) !important; border-bottom: 1px solid #1f2937; padding: 8rem 4rem !important; text-align: center; position: relative; }
-			#intro h1 { font-size: 5rem !important; font-weight: 900; background: linear-gradient(to right, #ffffff 40%, #38bdf8 70%, #0ea5e9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; letter-spacing: -0.05em; }
-			#intro p { color: #9ca3af !important; max-width: 52rem; margin: 0 auto 1.5rem auto; font-size: 1.25rem; line-height: 1.8; font-weight: 400; }
-			
-			/* Ultra-Premium Button Engineering */
-			.button { background: rgba(56, 189, 248, 0.03) !important; box-shadow: inset 0 0 0 1px rgba(56, 189, 248, 0.4) !important; color: #38bdf8 !important; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important; font-weight: 600 !important; border-radius: 8px; text-transform: none; letter-spacing: 0px; font-size: 0.9rem !important; height: 3.2rem !important; line-height: 3.2rem !important; padding: 0 2rem !important; }
-			.button:hover { background: #38bdf8 !important; color: #030712 !important; box-shadow: 0 0 30px rgba(56, 189, 248, 0.35) !important; transform: translateY(-2px); }
-			.button.large { background: #38bdf8 !important; color: #030712 !important; font-weight: 700 !important; box-shadow: 0 4px 20px rgba(56, 189, 248, 0.15) !important; }
-			.button.large:hover { background: transparent !important; color: #38bdf8 !important; box-shadow: inset 0 0 0 1px #38bdf8 !important; }
-			
-			/* Navigation Elements Upgrade */
-			#nav { background-color: #030712 !important; border-top: 1px solid #1f2937; border-bottom: 1px solid #1f2937; }
-			#nav .links li a { text-transform: none; font-weight: 500; font-size: 0.95rem; letter-spacing: 0; color: #6b7280 !important; }
-			#nav .links li.active a { color: #38bdf8 !important; border-bottom-color: #38bdf8 !important; background: transparent !important; font-weight: 600; }
-			#nav .icons a { color: #4b5563 !important; transition: color 0.2s ease; }
-			#nav .icons a:hover { color: #38bdf8 !important; }
-			
-			/* Main Content Console Architecture */
-			#main { background-color: #030712 !important; border: none !important; padding: 4rem 2rem !important; max-width: 78rem !important; margin: 0 auto; }
-			
-			/* High-End Card Layout System */
-			.project-grid { display: grid; grid-template-columns: 1fr; gap: 4rem; width: 100%; }
-			.post { border: 1px solid #1f2937 !important; padding: 4.5rem !important; margin-bottom: 0; background: linear-gradient(145deg, #0b1329 0%, #070c18 100%) !important; border-radius: 16px; box-shadow: 0 20px 40px -15px rgba(0,0,0,0.7); width: 100% !important; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); position: relative; overflow: hidden; }
-			.post:hover { border-color: rgba(56, 189, 248, 0.4) !important; box-shadow: 0 30px 60px -20px rgba(56, 189, 248, 0.1); transform: translateY(-4px); }
-			
-			/* Metrics HUD Badges */
-			.metrics-hud { display: flex; gap: 1.5rem; margin-bottom: 1.5rem; font-family: monospace; font-size: 0.8rem; color: #6b7280; text-transform: uppercase; }
-			.metrics-hud span strong { color: #10b981; }
-			
-			.post h2 { font-size: 2.8rem !important; font-weight: 800; line-height: 1.15; margin-top: 0; margin-bottom: 1.5rem; letter-spacing: -0.03em; }
-			.post h2 a { color: #ffffff !important; text-decoration: none; }
-			.post h3 { color: #38bdf8 !important; margin-top: 3rem; font-size: 1.25rem; font-weight: 600; text-transform: none; letter-spacing: 0; margin-bottom: 1rem; }
-			
-			/* Image Layout Standardizations */
-			.post .image { display: block; width: 100%; height: 440px; overflow: hidden; border-radius: 12px; border: 1px solid #1f2937; margin: 2.5rem 0; box-shadow: 0 25px 55px -25px rgba(0,0,0,0.8); background: #030712; position: relative; }
-			.post .image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); position: absolute; top: 0; left: 0; }
-			.post .image:hover img { transform: scale(1.03); }
-			
-			/* Premium Quantitative Code/Terminal Block Overhaul */
-			code { background-color: rgba(56, 189, 248, 0.08) !important; color: #38bdf8 !important; border: 1px solid rgba(56, 189, 248, 0.2); padding: 0.2rem 0.5rem; border-radius: 6px; font-weight: 500; font-family: monospace !important; font-size: 0.9em; }
-			blockquote { border-left: 2px solid #38bdf8 !important; color: #cbd5e1 !important; background: #030712 !important; padding: 1.75rem; border-radius: 8px; margin: 2.5rem 0; font-style: normal; border-top: none; border-bottom: none; border-right: none; box-shadow: inset 4px 0 0 rgba(56, 189, 248, 0.1); }
-			
-			/* Tech Badge Matrix Layout */
-			.tech-container { margin: 1.5rem 0 2.5rem 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
-			.tech-tag { display: inline-block; background: rgba(56, 189, 248, 0.04); color: #38bdf8; padding: 0.4rem 1rem; font-size: 0.75rem; font-weight: 600; border-radius: 9999px; border: 1px solid rgba(56, 189, 248, 0.15); text-transform: none; }
-			
-			/* FOOTER MANAGEMENT: Absolute Grid Alignment & Fixed Proportions */
-			#footer { background-color: #02040a !important; border-top: 1px solid #1f2937; padding: 6rem 4rem !important; max-width: 78rem !important; margin: 0 auto; border-radius: 24px 24px 0 0; display: flex; gap: 4rem; }
-			#footer section:first-child { flex: 1 1 55%; padding-right: 0; }
-			
-			#footer .split.contact { flex: 1 1 40%; display: flex; flex-direction: column; gap: 2rem; padding-left: 3rem; border-left: 1px solid #1f2937; }
-			#footer h3 { color: #ffffff !important; font-weight: 600; font-size: 1.4rem; letter-spacing: -0.02em; margin-bottom: 2rem; }
-			
-			/* Absolute alignment structural items preventing displacement */
-			.split.contact section { padding: 0 !important; margin: 0 !important; border: none !important; width: 100% !important; display: block !important; }
-			.split.contact h3 { margin-bottom: 0.5rem !important; font-size: 0.85rem !important; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7280 !important; font-weight: 700; }
-			.split.contact p { margin: 0 !important; padding: 0 !important; line-height: 1.6; font-size: 1.1rem; color: #e5e7eb !important; display: block !important; }
-			.split.contact p a { color: #38bdf8 !important; text-decoration: none; transition: opacity 0.2s; }
-			.split.contact p a:hover { opacity: 0.8; }
-			
-			/* Secure Icon Sets */
-			.split.contact .icons.alt { margin-top: 0.5rem !important; padding: 0 !important; list-style: none; display: flex; gap: 1.25rem; }
-			.split.contact .icons.alt a { color: #9ca3af !important; font-size: 1.2rem; transition: color 0.2s; }
-			.split.contact .icons.alt a:hover { color: #38bdf8 !important; }
-			
-			/* Form Processing Elements */
-			input[type="text"], input[type="email"], textarea { background-color: #030712 !important; border: 1px solid #1f2937 !important; color: #ffffff !important; border-radius: 8px; padding: 0.75rem 1rem; transition: all 0.3s ease; }
-			input[type="text"]:focus, input[type="email"]:focus, textarea:focus { border-color: #38bdf8 !important; box-shadow: 0 0 15px rgba(56, 189, 248, 0.1); }
-			label { color: #9ca3af !important; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
-			
-			#copyright { border-top: 1px solid #1f2937; padding-top: 3rem; margin-top: 4rem; color: #4b5563 !important; text-align: center; font-size: 0.85rem; width: 100%; }
-			#copyright a { color: #4b5563 !important; }
-			
-			@media screen and (max-width: 1100px) {
-				#footer { flex-direction: column; gap: 4rem; padding: 4rem 2rem !important; }
-				#footer .split.contact { padding-left: 0; border-left: none; }
-			}
-			@media screen and (max-width: 736px) {
-				#intro h1 { font-size: 3.2rem !important; }
-				.post { padding: 2rem !important; }
-				.post h2 { font-size: 1.8rem !important; }
-				.post .image { height: 260px; }
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Muhammad Hammad | Quantitative Finance & Computational Infrastructure</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* Pure Silicon-Valley Cyberpunk-SaaS Core Framework */
+            body, #wrapper { background-color: #02040a !important; color: #94a3b8 !important; font-family: 'SF Pro Display', -apple-system, system-ui, sans-serif !important; }
+            h1, h2, h3, h4, .logo, #nav .links li.active a { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif !important; letter-spacing: -0.03em; }
+            
+            /* Clean Up Legacy Template Lines & Accents */
+            .post::before, .post::after, .post.featured::before, .post.featured::after, 
+            header::before, header::after, header.major::before, header.major::after,
+            .post header::before, .post header::after, #main::before { display: none !important; content: none !important; border: none !important; background: none !important; }
+            hr { display: none !important; }
+            
+            /* Interactive Matrix Hero Design */
+            #intro { background: radial-gradient(circle at 50% 0%, #0f172a 0%, #02040a 80%) !important; border-bottom: 1px solid #1e293b; padding: 10rem 4rem !important; text-align: center; position: relative; overflow: hidden; }
+            #intro h1 { font-size: 5.5rem !important; font-weight: 900; background: linear-gradient(135deg, #ffffff 20%, #38bdf8 60%, #0369a1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; letter-spacing: -0.05em; }
+            #intro p { color: #94a3b8 !important; max-width: 55rem; margin: 0 auto 1.5rem auto; font-size: 1.25rem; line-height: 1.8; }
+            
+            /* High-End Glass HUD Control Architecture */
+            .dashboard-controls { background: rgba(10, 15, 30, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(56, 189, 248, 0.15); padding: 1.75rem 2rem; border-radius: 16px; margin-bottom: 4rem; display: flex; flex-direction: column; gap: 1.5rem; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5); }
+            @media(min-width: 768px) { .dashboard-controls { flex-direction: row; } }
+            
+            /* Professional Intelligent Search Bay */
+            .search-box { position: relative; width: 100%; max-width: 340px; }
+            .search-box input { background: #070a13 !important; border: 1px solid #1e293b !important; color: #ffffff !important; border-radius: 8px !important; padding: 0.7rem 1rem 0.7rem 2.5rem !important; font-size: 0.9rem !important; height: auto !important; width: 100%; transition: all 0.3s ease; }
+            .search-box input:focus { border-color: #38bdf8 !important; box-shadow: 0 0 20px rgba(56, 189, 248, 0.2); background: #0b1120 !important; }
+            .search-box::before { content: '⚡'; position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 0.85rem; opacity: 0.7; }
 
-		<!-- Main Wrapper Console Base -->
-			<div id="wrapper" class="fade-in">
+            /* Premium Tab Interface Modules */
+            .terminal-tabs { display: flex; gap: 1rem; width: auto; }
+            .tab-trigger { background: rgba(30, 41, 59, 0.3); border: 1px solid #1e293b; color: #64748b; padding: 0.7rem 1.75rem; font-size: 0.85rem; font-weight: 700; border-radius: 8px; cursor: pointer; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); display: flex; align-items: center; gap: 0.6rem; letter-spacing: 0.05em; }
+            .tab-trigger:hover { border-color: rgba(56, 189, 248, 0.4); color: #ffffff; }
+            .tab-trigger.active { background: rgba(56, 189, 248, 0.08); border-color: #38bdf8; color: #38bdf8; box-shadow: 0 0 25px rgba(56, 189, 248, 0.1); }
+            .tab-trigger span { background: #1e293b; color: #94a3b8; font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 6px; font-family: monospace; }
+            .tab-trigger.active span { background: #38bdf8; color: #02040a; font-weight: 800; }
 
-				<!-- Premium Interactive Intro Header Matrix -->
-					<div id="intro">
-						<h1>MUHAMMAD HAMMAD</h1>
-						<p style="font-weight: 600; color: #38bdf8 !important; letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 2rem;">Computational Finance Specialist &bull; Quantitative Strategy Architect</p>
-						<p>Engineering math-driven algorithmic engines and structured enterprise credit underwriting platforms to transform market anomalies into predictive operational vectors.</p>
-						<ul class="actions" style="margin-top: 3rem;">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Initialize Systems Inventory</a></li>
-						</ul>
-					</div>
+            /* Advanced Systems Layout Display Grid */
+            .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; width: 100%; }
+            @media screen and (max-width: 980px) { .project-grid { grid-template-columns: 1fr; } }
+            
+            /* Micro-Interaction Neon Glass Post Cards */
+            .post { border: 1px solid #1e293b !important; padding: 3rem !important; margin-bottom: 0; background: linear-gradient(145deg, #070c19 0%, #03050c 100%) !important; border-radius: 20px; box-shadow: 0 30px 60px -25px rgba(0,0,0,0.8); width: 100% !important; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; }
+            .post:hover { border-color: rgba(56, 189, 248, 0.5) !important; box-shadow: 0 40px 80px -25px rgba(56, 189, 248, 0.15); transform: translateY(-6px); }
+            .post::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(56, 189, 248, 0.02) 0%, transparent 100%); opacity: 0; transition: opacity 0.4s; pointer-events: none; }
+            .post:hover::after { opacity: 1; }
+            
+            /* High Precision HUD Telemetry Meta Layout */
+            .metrics-hud { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; font-family: monospace; font-size: 0.75rem; color: #64748b; text-transform: uppercase; border-bottom: 1px solid rgba(30, 41, 59, 0.7); padding-bottom: 0.85rem; }
+            .metrics-hud span strong { color: #34d399; }
+            .badge-live { background: rgba(52, 211, 153, 0.08); color: #34d399; padding: 0.25rem 0.65rem; border-radius: 6px; border: 1px solid rgba(52, 211, 153, 0.2); font-weight: 700; letter-spacing: 0.5px; }
+            .badge-dev { background: rgba(56, 189, 248, 0.08); color: #38bdf8; padding: 0.25rem 0.65rem; border-radius: 6px; border: 1px solid rgba(56, 189, 248, 0.2); font-weight: 700; letter-spacing: 0.5px; }
 
-				<!-- Header Core Branding -->
-					<header id="header">
-						<a href="index.html" class="logo" style="letter-spacing: 1px; font-weight: 700;">QUANT CORE CONSOLE v4.0</a>
-					</header>
+            .post h2 { font-size: 1.95rem !important; font-weight: 800; line-height: 1.3; margin-top: 0; margin-bottom: 1rem; letter-spacing: -0.03em; }
+            .post h2 a { color: #ffffff !important; text-decoration: none; transition: color 0.3s; }
+            .post h2 a:hover { color: #38bdf8 !important; }
+            
+            /* Full Bleed Architectural Frames */
+            .post .image { display: block; width: 100%; height: 260px; overflow: hidden; border-radius: 12px; border: 1px solid #1e293b; margin: 1.5rem 0; box-shadow: 0 20px 45px -15px rgba(0,0,0,0.9); background: #02040a; position: relative; }
+            .post .image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); position: absolute; top: 0; left: 0; }
+            .post .image:hover img { transform: scale(1.06); }
+            
+            /* Precision Control Interface Buttons */
+            .btn-group { display: flex; gap: 1rem; margin-top: auto; padding-top: 1.5rem; }
+            .button { display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; font-weight: 600 !important; font-size: 0.85rem !important; height: 2.9rem !important; line-height: 2.9rem !important; padding: 0 1.5rem !important; text-transform: none; letter-spacing: 0; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); flex: 1; text-align: center; }
+            
+            .btn-primary { background: #38bdf8 !important; color: #02040a !important; box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3) !important; border: none !important; }
+            .btn-primary:hover { background: #0ea5e9 !important; transform: translateY(-1px); box-shadow: 0 6px 25px rgba(56, 189, 248, 0.45) !important; }
+            
+            .btn-secondary { background: rgba(56, 189, 248, 0.02) !important; box-shadow: inset 0 0 0 1px rgba(56, 189, 248, 0.25) !important; color: #38bdf8 !important; }
+            .btn-secondary:hover { background: rgba(56, 189, 248, 0.08) !important; box-shadow: inset 0 0 0 1px #38bdf8 !important; color: #ffffff !important; }
+            
+            /* Navigation Link Infrastructure */
+            #nav { background-color: #02040a !important; border-top: 1px solid #1e293b; border-bottom: 1px solid #1e293b; }
+            #nav .links li a { text-transform: none; font-weight: 500; font-size: 0.95rem; letter-spacing: 0; color: #64748b !important; }
+            #nav .links li.active a { color: #38bdf8 !important; border-bottom-color: #38bdf8 !important; background: transparent !important; font-weight: 600; }
+            #nav .icons a { color: #475569 !important; transition: color 0.2s ease; }
+            #nav .icons a:hover { color: #38bdf8 !important; }
+            
+            #main { background-color: #02040a !important; border: none !important; padding: 5rem 2rem !important; max-width: 80rem !important; margin: 0 auto; }
+            
+            /* Custom Structural Badges Core Layout */
+            .tech-container { margin: 1rem 0; display: flex; flex-wrap: wrap; gap: 0.45rem; }
+            .tech-tag { display: inline-block; background: rgba(56, 189, 248, 0.03); color: #38bdf8; padding: 0.35rem 0.85rem; font-size: 0.7rem; font-weight: 600; border-radius: 9999px; border: 1px solid rgba(56, 189, 248, 0.15); font-family: monospace; }
+            
+            /* Integrated Industrial Footer Base Console */
+            #footer { background-color: #010205 !important; border-top: 1px solid #1e293b; padding: 6rem 4rem !important; max-width: 80rem !important; margin: 0 auto; border-radius: 24px 24px 0 0; display: flex; gap: 4rem; }
+            #footer section:first-child { flex: 1 1 55%; }
+            #footer .split.contact { flex: 1 1 40%; display: flex; flex-direction: column; gap: 2rem; padding-left: 3rem; border-left: 1px solid #1e293b; }
+            #footer h3 { color: #ffffff !important; font-weight: 600; font-size: 1.4rem; margin-bottom: 2rem; letter-spacing: -0.02em; }
+            .split.contact section { padding: 0 !important; margin: 0 !important; border: none !important; }
+            .split.contact h3 { font-size: 0.85rem !important; text-transform: uppercase; color: #64748b !important; font-weight: 700; }
+            .split.contact p { color: #cbd5e1 !important; font-size: 1.1rem; }
+            .split.contact p a { color: #38bdf8 !important; text-decoration: none; }
+            
+            input[type="text"], input[type="email"], textarea { background-color: #02040a !important; border: 1px solid #1e293b !important; color: #ffffff !important; border-radius: 8px; padding: 0.75rem 1rem; }
+            input[type="text"]:focus, input[type="email"]:focus, textarea:focus { border-color: #38bdf8 !important; box-shadow: 0 0 15px rgba(56, 189, 248, 0.1); }
+            label { color: #94a3b8 !important; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.5rem; }
+            #copyright { border-top: 1px solid #1e293b; padding-top: 3rem; margin-top: 4rem; color: #475569 !important; text-align: center; font-size: 0.85rem; }
+            #copyright a { color: #475569 !important; }
 
-				<!-- System Navigation Terminal -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Production Engines Portfolio</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://github.com/MuhammadHammad-dotcom" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/muhammad-hammad-95a048320" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						</ul>
-					</nav>
+            @media screen and (max-width: 1100px) {
+                #footer { flex-direction: column; gap: 4rem; padding: 4rem 2rem !important; }
+                #footer .split.contact { padding-left: 0; border-left: none; }
+            }
+        </style>
+    </head>
+    <body class="is-preload">
 
-				<!-- Portfolio Core Matrix -->
-					<div id="main">
-						
-						<!-- Comprehensive System Layout Grid -->
-						<div class="project-grid">
+        <div id="wrapper" class="fade-in">
 
-							<!-- DEPLOYED SYSTEM 01: NEURAL-TRADE PRO TERMINAL -->
-							<article class="post">
-								<div class="metrics-hud">
-									<span>STATUS: <strong>LIVE</strong></span> &bull; <span>ACCURACY SCORE: <strong>94.2%</strong></span> &bull; <span>OPTIMIZATION: <strong>150 ENSEMBLE NODES</strong></span>
-								</div>
-								
-								<h2><a href="https://ai-algorithmic-trading-terminal-knxio6ihaq4qldgeta7vwp.streamlit.app/" target="_blank">Neural-Trade Pro: High-Dimensional Asset Analytics Terminal</a></h2>
-								
-								<div class="tech-container">
-									<span class="tech-tag">Python Core</span>
-									<span class="tech-tag">Random Forest Ensembles</span>
-									<span class="tech-tag">Stochastic RSI Modulations</span>
-									<span class="tech-tag">Rolling Min-Max Volatility Bounds</span>
-									<span class="tech-tag">Asynchronous yFinance APIs</span>
-									<span class="tech-tag">Plotly Data UX</span>
-								</div>
-								
-								<p>An institutional-grade computational trading interface designed to isolate directional market vectors, execute dynamic multi-asset validation (Crypto, Precious Metals, Forex), and stream mathematical risk metrics in high-volatility environments.</p>
-								
-								<!-- Premium Algorithmic Display -->
-								<a href="https://ai-algorithmic-trading-terminal-knxio6ihaq4qldgeta7vwp.streamlit.app/" target="_blank" class="image">
-									<img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRron801XfpH6exMybPaQjTLRMyjhQXA_kzBMBdfO41Ux6iGXXj3jMTsWH1bWEebfI4PbJbbKDf_QE3gwQ" alt="Neural-Trade Computing System Overview" />
-								</a>
-								
-								<h3>Architectural Pipeline Spec</h3>
-								<p>Engineered zero-latency data ingestion framework utilizing multi-threaded hooks to capture raw exchange pricing streams. The underlying engine transforms raw candles into custom feature tensors, isolating dynamic resistance bounds and real-time stochastic indicators to prevent false momentum breakouts.</p>
-								
-								<blockquote>
-									<strong>Core Algorithmic Matrix:</strong> Predictive workflows utilize a refined ensemble processing structure running 150 parallel statistical trees to map historical asset liquidity into definitive direction probability vectors.
-								</blockquote>
+            <!-- Intro Section -->
+            <div id="intro">
+                <h1>MUHAMMAD HAMMAD</h1>
+                <p style="font-weight: 700; color: #38bdf8 !important; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.95rem; margin-bottom: 2rem;">Computational Finance Specialist &bull; Quantitative Strategy Architect</p>
+                <p>Engineering math-driven algorithmic engines and structured enterprise credit underwriting platforms to transform market anomalies into predictive operational vectors.</p>
+                <ul class="actions" style="margin-top: 3rem;">
+                    <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Initialize Systems Inventory</a></li>
+                </ul>
+            </div>
 
-								<ul class="actions" style="margin-top: 2.5rem;">
-									<li><a href="https://ai-algorithmic-trading-terminal-knxio6ihaq4qldgeta7vwp.streamlit.app/" target="_blank" class="button large">Launch Live Trading Terminal</a></li>
-								</ul>
-							</article>
+            <header id="header">
+                <a href="index.html" class="logo" style="letter-spacing: 1.5px; font-weight: 800;">QUANT CORE MODULE v7.0</a>
+            </header>
 
-							<!-- DEPLOYED SYSTEM 02: INTELRISK UNDERWRITING MATRIX -->
-							<article class="post">
-								<div class="metrics-hud">
-									<span>TYPE: <strong>RISK ENGINE</strong></span> &bull; <span>METRIC PERSISTENCE: <strong>ST.SESSION_STATE</strong></span> &bull; <span>DATA VISUALS: <strong>3D SCATTER</strong></span>
-								</div>
-								
-								<h2><a href="https://intelrisk-lend-57l8ubfqbnm5wckuqsufsh.streamlit.app/" target="_blank">IntelRisk: Predictive Credit Underwriting & Risk Engine</a></h2>
-								
-								<div class="tech-container">
-									<span class="tech-tag">Scikit-Learn Infrastructure</span>
-									<span class="tech-tag">Structured Processing Pipelines</span>
-									<span class="tech-tag">Isolated Session States</span>
-									<span class="tech-tag">High-Dimensional Radar Profiles</span>
-								</div>
-								
-								<p>An advanced analytical underwriting engine built to process granular consumer datasets, formulate predictive default metrics, and optimize institutional portfolio yields using advanced risk classification clusters.</p>
-								
-								<!-- Premium Credit Matrix Display -->
-								<a href="https://intelrisk-lend-57l8ubfqbnm5wckuqsufsh.streamlit.app/" target="_blank" class="image">
-									<img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSTz-7jz-P__r3m0TPMHNuZmfiQ4ikqh0yBccajvhyLV143w128ps8b362SS6fH1EW74ehr4vxhmCSvOtA" alt="IntelRisk Production Grid System" />
-								</a>
-								
-								<h3>Operational Architecture Spec</h3>
-								<p>IntelRisk removes automated underwriting variance by checking debt ratios and income lines against historical probability matrix standards. The application leverages custom-isolated processing environments to prevent data leakage between analysis runs, displaying high-dimensional cluster spreads and expected yield variations directly onto premium interface modules.</p>
-								
-								<ul class="actions" style="margin-top: 2.5rem;">
-									<li><a href="https://intelrisk-lend-57l8ubfqbnm5wckuqsufsh.streamlit.app/" target="_blank" class="button">Initialize Underwriting Matrix</a></li>
-								</ul>
-							</article>
+            <nav id="nav">
+                <ul class="links">
+                    <li class="active"><a href="index.html">Production Engines Portfolio</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://github.com/MuhammadHammad-dotcom" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/muhammad-hammad-95a048320" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+            </nav>
 
-						</div>
-					</div>
+            <!-- Portfolio Core Matrix Layout -->  
+            <div id="main">
+                
+                <!-- ADVANCED CONTROL HUD CONTROLS BAR -->
+                <div class="dashboard-controls">
+                    <div class="terminal-tabs">
+                        <button class="tab-trigger active" onclick="switchControlTab('live')" id="tab-live-btn">
+                            LIVE RUNTIME <span id="count-live">0</span>
+                        </button>
+                        <button class="tab-trigger" onclick="switchControlTab('dev')" id="tab-dev-btn">
+                            DEVELOPMENT ARCHIVE <span id="count-dev">0</span>
+                        </button>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Query repository matrix..." onkeyup="handleSearchFilter()">
+                    </div>
+                </div>
+                    
+                <!-- Comprehensive Systems Grid Grid -->
+                <div class="project-grid" id="dynamic-github-projects">
+                    <!-- Dynamic Projects Load Real-time via JS Engine -->
+                </div>
 
-				<!-- Absolute Aligned Institutional Footer Console -->
-					<footer id="footer">
-						<section>
-							<h3 style="color: #ffffff !important;">Transmission Gateway</h3>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Identity / Institution</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Communications Node Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Strategic Parameters / Requirements</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions" style="margin-top: 2rem;">
-									<li><input type="submit" value="Dispatch Secure Message" class="button primary" style="background: #38bdf8 !important; color: #030712 !important; border: none !important; font-weight: 700 !important; cursor: pointer;" /></li>
-								</ul>
-							</form>
-						</section>
-						
-						<!-- FIXED ALIGNMENT CONSOLE BLOCK (Resolves image_085944.png grid issues) -->
-						<section class="split contact">
-							<section>
-								<h3>Operations Headquarters</h3>
-								<p>Karachi, Sindh, Pakistan</p>
-							</section>
-							<section>
-								<h3>Direct Access Port</h3>
-								<p><a href="mailto:mhammadmnaeem29@gmail.com">mhammadmnaeem29@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Distributed Networks</h3>
-								<ul class="icons alt">
-									<li><a href="https://github.com/MuhammadHammad-dotcom" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/muhammad-hammad-95a048320" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+            </div>
 
-				<!-- System Baseline Core Info -->
-					<div id="copyright">
-						<ul><li>&copy; Muhammad Hammad &bull; All System Rights Reserved</li><li>Base Framework: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+            <!-- Absolute Aligned Institutional Footer Console -->
+            <footer id="footer">
+                <section>
+                    <h3>Transmission Gateway</h3>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field"><label for="name">Identity / Institution</label><input type="text" name="name" id="name" /></div>
+                            <div class="field"><label for="email">Communications Node Email</label><input type="text" name="email" id="email" /></div>
+                            <div class="field"><label for="message">Strategic Parameters / Requirements</label><textarea name="message" id="message" rows="4"></textarea></div>
+                        </div>
+                        <ul class="actions" style="margin-top: 2rem;">
+                            <li><input type="submit" value="Dispatch Secure Message" class="button primary btn-primary" style="cursor: pointer;" /></li>
+                        </ul>
+                    </form>
+                </section>
+                
+                <section class="split contact">
+                    <section><h3>Operations Headquarters</h3><p>Karachi, Sindh, Pakistan</p></section>
+                    <section><h3>Direct Access Port</h3><p><a href="mailto:mhammadmnaeem29@gmail.com">mhammadmnaeem29@gmail.com</a></p></section>
+                    <section>
+                        <h3>Distributed Networks</h3>
+                        <ul class="icons alt">
+                            <li><a href="https://github.com/MuhammadHammad-dotcom" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/muhammad-hammad-95a048320" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
 
-			</div>
+            <div id="copyright">
+                <ul><li>&copy; Muhammad Hammad &bull; All System Rights Reserved</li><li>SaaS Architecture Model</li></ul>
+            </div>
 
-		<!-- Production System Core Controllers -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        </div>
 
-	</body>
+        <!-- Production System Core Controllers -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <!-- LIVE AUTOMATED BALANCER & ROUTING PIPELINE ENGINE -->
+        <script>
+            const githubUsername = "MuhammadHammad-dotcom";
+            let globalLiveProjects = [];
+            let globalDevProjects = [];
+            let currentTab = 'live';
+            let searchQuery = '';
+
+            // Premium Stock Visualization Structural Presets
+            const techImages = [
+                "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=600&q=80",
+                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+                "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
+                "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=600&q=80"
+            ];
+
+            async function compilePipelineEngine() {
+                const projectContainer = document.getElementById('dynamic-github-projects');
+                // Real-time Cyberpunk Booting Console Effect
+                projectContainer.innerHTML = `
+                    <div style="grid-column: span 2; text-align: center; padding: 4rem 0; font-family: monospace;">
+                        <p style="color: #38bdf8; margin: 0; font-size: 1.1rem; letter-spacing:1px;">[SYSTEM] LOADING QUANT DATA INFRASTRUCTURE...</p>
+                        <p style="color: #64748b; font-size: 0.8rem; margin: 5px 0 0 0;">AUTHENTICATING GATEWAY TO NODE: @${githubUsername}</p>
+                    </div>`;
+                
+                try {
+                    const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated&per_page=30`);
+                    const repositories = await response.json();
+
+                    globalLiveProjects = [];
+                    globalDevProjects = [];
+
+                    repositories.forEach((repo, index) => {
+                        if (repo.fork) return; 
+
+                        let isLive = false;
+                        let liveUrl = repo.homepage || null;
+                        let displayTitle = repo.name.replace(/-/g, ' ').toUpperCase();
+                        let customDesc = repo.description || 'Enterprise execution logic asset compiled inside automated version control arrays.';
+                        
+                        let imgIndex = index % techImages.length;
+                        let customImageUrl = techImages[imgIndex];
+
+                        // ─── PEAK PERFORMANCE MATRIX DETECTORS ───
+                        if (repo.name.toLowerCase().includes('trading') || repo.name.toLowerCase().includes('neural')) {
+                            isLive = true;
+                            liveUrl = "https://ai-algorithmic-trading-terminal-knxio6ihaq4qldgeta7vwp.streamlit.app/";
+                            displayTitle = "NEURAL-TRADE PRO: QUANTITATIVE ANALYTICS ENGINE";
+                            customDesc = "Institutional computational trading terminal to map dynamic multi-asset vector variations and live stream computational calculations.";
+                            customImageUrl = "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&q=80";
+                        } 
+                        else if (repo.name.toLowerCase().includes('intelrisk') || repo.name.toLowerCase().includes('lend')) {
+                            isLive = true;
+                            liveUrl = "https://intelrisk-lend-57l8ubfqbnm5wckuqsufsh.streamlit.app/";
+                            displayTitle = "INTELRISK: PREDICTIVE PORTFOLIO UNDERWRITING PLATFORM";
+                            customDesc = "Advanced analytical risk infrastructure utilizing statistical clusters to configure modern portfolio optimizations.";
+                            customImageUrl = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80";
+                        }
+                        else if (repo.name.toLowerCase().includes('inventory') || repo.name.toLowerCase().includes('stock')) {
+                            isLive = true;
+                            liveUrl = repo.homepage || repo.html_url; 
+                            displayTitle = "INTELLIGENT INVENTORY LOGISTICS & ASSET CONTROL CORE";
+                            customDesc = "An enterprise-grade real-time inventory tracking platform engineered to balance operational supply-chain vectors and stream live asset validation metrics.";
+                            customImageUrl = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80";
+                        }
+                        else if (liveUrl && liveUrl.trim() !== "" || repo.name.toLowerCase().includes('live') || repo.name.toLowerCase().includes('app') || repo.name.toLowerCase().includes('deploy')) {
+                            isLive = true;
+                        }
+
+                        const structuredAsset = {
+                            title: displayTitle,
+                            desc: customDesc,
+                            image: customImageUrl,
+                            gitUrl: repo.html_url,
+                            liveUrl: liveUrl,
+                            lang: repo.language || 'Python Engine'
+                        };
+
+                        // Zero Redundancy Array Injection
+                        if (isLive) {
+                            globalLiveProjects.push(structuredAsset);
+                        } else {
+                            globalDevProjects.push(structuredAsset);
+                        }
+                    });
+
+                    document.getElementById('count-live').innerText = globalLiveProjects.length;
+                    document.getElementById('count-dev').innerText = globalDevProjects.length;
+
+                    renderCurrentSystemTab();
+
+                } catch (error) {
+                    console.error("Pipeline failure:", error);
+                    projectContainer.innerHTML = '<p style="color: #ef4444; font-family: monospace; text-align: center; width: 100%;">CRITICAL METRIC EXCEPTION: SOURCE DISCONNECTED.</p>';
+                }
+            }
+
+            function renderCurrentSystemTab() {
+                const projectContainer = document.getElementById('dynamic-github-projects');
+                projectContainer.innerHTML = '';
+
+                let targetedCollection = (currentTab === 'live') ? globalLiveProjects : globalDevProjects;
+
+                if (searchQuery.trim() !== '') {
+                    targetedCollection = targetedCollection.filter(p => 
+                        p.title.toLowerCase().includes(searchQuery) || 
+                        p.desc.toLowerCase().includes(searchQuery) || 
+                        p.lang.toLowerCase().includes(searchQuery)
+                    );
+                }
+
+                if (targetedCollection.length === 0) {
+                    projectContainer.innerHTML = `<div style="grid-column: span 2; text-align: center; color: #64748b; font-family: monospace; padding: 4rem 0;">NO MATRIX ASSETS IDENTIFIED UNDER CURRENT MODULES.</div>`;
+                    return;
+                }
+
+                targetedCollection.forEach(project => {
+                    const article = document.createElement('article');
+                    article.className = 'post';
+
+                    let actionableButtonsHtml = '';
+                    if (currentTab === 'live') {
+                        actionableButtonsHtml = `
+                            <a href="${project.liveUrl}" target="_blank" class="button btn-primary">Launch Live App</a>
+                            <a href="${project.gitUrl}" target="_blank" class="button btn-secondary">Source Code</a>
+                        `;
+                    } else {
+                        actionableButtonsHtml = `
+                            <a href="${project.gitUrl}" target="_blank" class="button btn-secondary" style="width: 100%; flex: none;">Inspect Source Code</a>
+                        `;
+                    }
+
+                    const badgeHtml = (currentTab === 'live') ? '<span class="badge-live">ONLINE APP</span>' : '<span class="badge-dev">STABLE LOGIC</span>';
+
+                    article.innerHTML = `
+                        <div>
+                            <div class="metrics-hud">
+                                <span>ENVIRONMENT: <strong>${project.lang}</strong></span>
+                                ${badgeHtml}
+                            </div>
+                            
+                            <h2><a href="${currentTab === 'live' ? project.liveUrl : project.gitUrl}" target="_blank">${project.title}</a></h2>
+                            
+                            <div class="tech-container">
+                                <span class="tech-tag">${project.lang}</span>
+                                <span class="tech-tag">Automated Sync</span>
+                                <span class="tech-tag">v7.0 Core</span>
+                            </div>
+
+                            <a href="${currentTab === 'live' ? project.liveUrl : project.gitUrl}" target="_blank" class="image">
+                                <img src="${project.image}" alt="${project.title}" loading="lazy"/>
+                            </a>
+
+                            <p style="font-size: 0.95rem; line-height: 1.6; margin-top: 1rem;">${project.desc}</p>
+                        </div>
+                        
+                        <div class="btn-group">
+                            ${actionableButtonsHtml}
+                        </div>
+                    `;
+                    projectContainer.appendChild(article);
+                });
+            }
+
+            function switchControlTab(targetTab) {
+                if (currentTab === targetTab) return;
+                currentTab = targetTab;
+
+                document.getElementById('tab-live-btn').classList.toggle('active', currentTab === 'live');
+                document.getElementById('tab-dev-btn').classList.toggle('active', currentTab === 'dev');
+
+                renderCurrentSystemTab();
+            }
+
+            function handleSearchFilter() {
+                searchQuery = document.getElementById('search-input').value.toLowerCase();
+                renderCurrentSystemTab();
+            }
+
+            document.addEventListener("DOMContentLoaded", compilePipelineEngine);
+        </script>
+
+    </body>
 </html>
