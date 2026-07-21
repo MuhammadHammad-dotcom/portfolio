@@ -64,7 +64,7 @@
             .search-box::before { content: '⚡'; position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 0.85rem; opacity: 0.7; }
 
             /* Premium Tab Interface Modules */
-            .terminal-tabs { display: flex; gap: 1rem; width: auto; flex-wrap: wrap; }
+            .terminal-tabs { display: flex; gap: 1rem; width: auto; flex-wrap: wrap; justify-content: center; }
             .tab-trigger { background: rgba(30, 41, 59, 0.3); border: 1px solid var(--border-color); color: #64748b; padding: 0.7rem 1.5rem; font-size: 0.85rem; font-weight: 700; border-radius: 8px; cursor: pointer; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); display: flex; align-items: center; gap: 0.6rem; letter-spacing: 0.05em; }
             .tab-trigger:hover { border-color: rgba(var(--accent-rgb), 0.4); color: var(--text-light); }
             .tab-trigger.active { background: rgba(var(--accent-rgb), 0.08); border-color: var(--accent-glow); color: var(--accent-glow); box-shadow: 0 0 25px rgba(var(--accent-rgb), 0.1); }
@@ -107,9 +107,11 @@
             .btn-secondary:hover { background: rgba(var(--accent-rgb), 0.08) !important; box-shadow: inset 0 0 0 1px var(--accent-glow) !important; color: var(--text-light) !important; }
             
             /* Navigation Structural Systems */
-            #nav { background-color: var(--bg-primary) !important; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); }
-            #nav .links li a { text-transform: none; font-weight: 500; font-size: 0.95rem; letter-spacing: 0; color: #64748b !important; }
-            #nav .links li.active a { color: var(--accent-glow) !important; border-bottom-color: var(--accent-glow) !important; background: transparent !important; font-weight: 600; }
+            #nav { background-color: var(--bg-primary) !important; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+            #nav .links { display: flex; list-style: none; margin: 0; padding: 0; }
+            #nav .links li { padding: 1rem 0; }
+            #nav .links li span, #nav .links li.active span { text-transform: none; font-weight: 600; font-size: 0.95rem; letter-spacing: 0; color: var(--accent-glow) !important; background: transparent !important; border: none !important; cursor: default; }
+            #nav .icons { display: flex; list-style: none; gap: 1rem; margin: 0; padding: 0; }
             #nav .icons a { color: #475569 !important; transition: color 0.2s ease; }
             #nav .icons a:hover { color: var(--accent-glow) !important; }
             
@@ -139,6 +141,21 @@
                 #footer { flex-direction: column; gap: 4rem; padding: 4rem 2rem !important; }
                 #footer .split.contact { padding-left: 0; border-left: none; }
             }
+
+            /* ─── MOBILE RESPONSIVE OVERLAP FIXES ─── */
+            @media screen and (max-width: 768px) {
+                #intro { padding: 4rem 1.5rem !important; }
+                #intro h1 { font-size: 2.5rem !important; line-height: 1.2; }
+                #intro p { font-size: 1rem !important; }
+                #main { padding: 2rem 1rem !important; }
+                .dashboard-controls { padding: 1.25rem 1rem; }
+                .post { padding: 1.5rem !important; }
+                .post h2 { font-size: 1.4rem !important; }
+                .btn-group { flex-direction: column; gap: 0.75rem; }
+                .button { width: 100% !important; }
+                #nav { padding: 0 1rem; flex-direction: column; gap: 0.5rem; }
+                #nav .links { width: 100%; justify-content: center; }
+            }
         </style>
     </head>
     <body class="is-preload">
@@ -156,12 +173,12 @@
             </div>
 
             <header id="header">
-                <a href="index.html" class="logo" style="letter-spacing: 1.5px; font-weight: 800;">QUANT CORE MODULE v10.0</a>
+                <div class="logo" style="letter-spacing: 1.5px; font-weight: 800; cursor: default;">QUANT CORE MODULE v10.0</div>
             </header>
 
             <nav id="nav">
                 <ul class="links">
-                    <li class="active"><a href="index.html">Production Engines Portfolio</a></li>
+                    <li class="active"><span>Production Engines Portfolio</span></li>
                 </ul>
                 <ul class="icons">
                     <li><a href="https://github.com/MuhammadHammad-dotcom" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -282,22 +299,19 @@
             function calculateSmartTags(repo) {
                 let tags = ["v10.0 Core", "Automated Sync"];
                 
-                // Add language tag automatically
                 if(repo.language) {
                     tags.unshift(repo.language);
                 }
                 
-                // Scan codebase names or descriptions for micro stack resolution
                 const nameStr = repo.name.toLowerCase();
                 const descStr = (repo.description || '').toLowerCase();
 
                 if (nameStr.includes('react') || descStr.includes('react')) tags.push('React');
-                if (nameStr.includes('python') || nameStr.includes('streamlit')) tags.push('Python SaaS');
+                if (nameStr.includes('python') || descStr.includes('streamlit')) tags.push('Python SaaS');
                 if (nameStr.includes('api') || descStr.includes('rest')) tags.push('REST API');
                 if (nameStr.includes('model') || descStr.includes('learning')) tags.push('AI/ML Array');
-                if (nameStr.includes('finance') || nameStr.includes('trade')) tags.push('Quant Logic');
+                if (nameStr.includes('finance') || descStr.includes('trade')) tags.push('Quant Logic');
                 
-                // Ensure array size limits for UI preservation
                 return [...new Set(tags)].slice(0, 4);
             }
 
@@ -305,7 +319,6 @@
             async function compilePipelineEngine() {
                 const projectContainer = document.getElementById('dynamic-github-projects');
                 
-                // Immersive Terminal Micro-Console Loader HUD
                 projectContainer.innerHTML = `
                     <div style="grid-column: span 2; text-align: center; padding: 5rem 0; font-family: monospace;">
                         <p style="color: var(--accent-glow); margin: 0; font-size: 1.1rem; letter-spacing:1px; font-weight:bold;">[SYSTEM] COMPILING AUTOMATED SOVEREIGN PIPELINE...</p>
@@ -333,7 +346,6 @@
                         let customImageUrl = techImages[imgIndex];
                         let tagsArray = calculateSmartTags(repo);
 
-                        // ─── INSTITUTIONAL PRESETS DETECTORS ───
                         if (repo.name.toLowerCase().includes('trading') || repo.name.toLowerCase().includes('neural')) {
                             isLive = true;
                             liveUrl = "https://ai-algorithmic-trading-terminal-knxio6ihaq4qldgeta7vwp.streamlit.app/";
@@ -350,16 +362,14 @@
                             customImageUrl = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80";
                             tagsArray = ["Risk Infrastructure", "Statistical", "Credit Underwriting"];
                         }
-                  else if (repo.name.toLowerCase().includes('inventory') || repo.name.toLowerCase().includes('stock')) {
-    isLive = true;
-    // Yahan maine aapka sahi link dal diya hai
-    liveUrl = "https://inventoryproject-qegnhff482cemebwxhw63k.streamlit.app/"; 
-    displayTitle = "INTELLIGENT INVENTORY LOGISTICS & ASSET CONTROL CORE";
-    customDesc = "An enterprise-grade real-time inventory tracking platform engineered to balance operational supply-chain vectors and stream live asset validation metrics.";
-    customImageUrl = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80";
-    tagsArray = ["Logistics System", "Asset Control", "SaaS Module"];
-}
-                        
+                        else if (repo.name.toLowerCase().includes('inventory') || repo.name.toLowerCase().includes('stock')) {
+                            isLive = true;
+                            liveUrl = "https://inventoryproject-qegnhff482cemebwxhw63k.streamlit.app/"; 
+                            displayTitle = "INTELLIGENT INVENTORY LOGISTICS & ASSET CONTROL CORE";
+                            customDesc = "An enterprise-grade real-time inventory tracking platform engineered to balance operational supply-chain vectors and stream live asset validation metrics.";
+                            customImageUrl = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80";
+                            tagsArray = ["Logistics System", "Asset Control", "SaaS Module"];
+                        }
                         else if (liveUrl && liveUrl.trim() !== "" || repo.name.toLowerCase().includes('live') || repo.name.toLowerCase().includes('app') || repo.name.toLowerCase().includes('deploy')) {
                             isLive = true;
                         }
@@ -430,7 +440,6 @@
 
                     const badgeHtml = (currentTab === 'live') ? '<span class="badge-live">ONLINE APP</span>' : '<span class="badge-dev">STABLE LOGIC</span>';
                     
-                    // Dynamic tag elements builder
                     let tagsListHtml = '';
                     project.tags.forEach(t => { tagsListHtml += `<span class="tech-tag">${t}</span>`; });
 
@@ -464,7 +473,6 @@
 
             // ─── FAIL-SAFE RECOVERY BUFFER SYSTEMS ───
             function renderCriticalSystemFallback() {
-                // Generates zero-downtime offline placeholder blocks automatically if network blocks API
                 const projectContainer = document.getElementById('dynamic-github-projects');
                 projectContainer.innerHTML = '';
                 
