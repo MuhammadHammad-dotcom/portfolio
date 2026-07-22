@@ -1,128 +1,120 @@
 ```markdown
-# **MUHAMMAD HAMMAD | NEXT-GEN ULTIMATE QUANTUM AI & QUANTUM DATA MATRIX V15.0**
-
-> **Engineered for Maximum Scale, Enterprise-Grade Performance, and Zero-Latency Execution.**
-
----
-
-## **📑 TABLE OF CONTENTS**
-1. [**Executive Summary**](#-executive-summary)
-2. [**Architectural Overview**](#-architectural-overview)
-3. [**Core Technical Stack**](#-core-technical-stack)
-4. [**Key System Features & HUD Modules**](#-key-system-features--hud-modules)
-5. [**Enterprise Directory & File Structure**](#-enterprise-directory--file-structure)
-6. [**Asynchronous Data Pipeline & GitHub Integration**](#-asynchronous-data-pipeline--github-integration)
-7. [**Installation & Local Deployment Guide**](#-installation--local-deployment-guide)
-8. [**Professional Contact & Network Matrix**](#-professional-contact--network-matrix)
+# Muhammad Hammad | Quantitative Finance & Computational Infrastructure
+**Elite Quantitative Portfolio Terminal v10.0 (Ultimate Sovereign Edition)**[cite: 1]
 
 ---
 
-## **🚀 1. EXECUTIVE SUMMARY**
-The **Quantum AI & Data Science Matrix v15.0** is an enterprise-grade, high-performance web platform and command center engineered by **Muhammad Hammad**. Designed for absolute industry excellence, it showcases advanced Python development, autonomous machine learning applications, predictive neural computing engines, and high-frequency analytical workflows. 
+## 1. Executive Summary & Architecture Overview
 
-Featuring a modern glassmorphic HUD interface, dynamic theme toggling, real-time client-side search filtering, and seamless asynchronous telemetry ingestion from GitHub, this platform represents the pinnacle of modern web architecture.
+The **Elite Quantitative Portfolio Terminal v10.0** is an autonomous, high-performance web terminal engineered by **Muhammad Hammad**[cite: 1]. It dynamically interfaces with the GitHub REST API to ingest, parse, and display production-grade quantitative applications, risk infrastructure modules, and algorithmic engines in real time[cite: 1].
 
----
-
-## **🏛️ 2. ARCHITECTURAL OVERVIEW**
-* **Design Philosophy:** Built around modularity, zero-latency execution, and maximum scalability.
-* **Layout Design:** Powered by a customized CSS Grid and Flexbox infrastructure tailored for responsive viewing across enterprise workstations, tablets, and mobile devices.
-* **Visual Aesthetics:** Implements a high-end dark-mode command center theme with deep surface contrasts (`#02040a`), glassmorphic backdrop filters (`backdrop-filter: blur(30px)`), and radiant neon illumination effects.
+Built upon a modern cyberpunk-SaaS core framework, the portfolio features client-side API runtime ingestion, state-driven HUD controls, dynamic theme toggling (Cyber-Blue vs. Stealth-Emerald), real-time query filtering, and a robust Failsafe Recovery Buffer mechanism[cite: 1].
 
 ---
 
-## **🛠️ 3. CORE TECHNICAL STACK**
+## 2. Core Architectural Highlights
 
-| Component | Technology / Framework | Description |
-| :--- | :--- | :--- |
-| **Markup Language** | **HTML5** | Strict semantic structure with zero redundancy. |
-| **Styling Framework** | **CSS3 / Custom Design Tokens** | Dynamic CSS variables (`:root`) for instant runtime theme swapping. |
-| **Behavioral Scripting** | **JavaScript (ES6+ Asynchronous)** | Custom asynchronous pipeline controllers, DOM rendering engines, and event listeners. |
-| **Icons & Typography** | **FontAwesome & Inter Font Family** | Clean geometric typography with crisp vector iconography. |
-| **External Integrations**| **GitHub REST API & Streamlit** | Automated repository harvesting and live SaaS application deployment tracking. |
+*   **Autonomous GitHub Integration:** Asynchronously queries public repositories via `https://api.github.com/users/MuhammadHammad-dotcom/repos`, automatically filtering out forks and partitioning repositories into **Live Runtime** deployments and **Stable Development** logic[cite: 1].
+*   **Dynamic Micro-Interaction HUD:** Features responsive terminal tabs (`LIVE RUNTIME` and `DEVELOPMENT`) with live repository counters and real-time text query filtering[cite: 1].
+*   **Smart Tag Auto-Extraction Engine:** Automatically extracts repository languages, titles, and descriptions to generate dynamic technology badges (e.g., `Python Engine`, `Streamlit`, `Neural Net`, `Risk Infrastructure`)[cite: 1].
+*   **Stateful Theme Controller:** Instant dual-theme switcher altering CSS variable tokens for background matrices, surface gradients, and glowing accents (`--accent-glow`)[cite: 1].
 
 ---
 
-## **🌟 4. KEY SYSTEM FEATURES & HUD MODULES**
+## 3. Technical Stack & Component Breakdown
 
-* **Interactive Terminal Tabs:** Dynamically switch between **_Deployed SaaS Applications_** (`COUNT-LIVE`) and **_Core Repositories_** (`COUNT-DEV`) without reloading the page.
-* **Real-Time Search Engine:** Instant client-side filtering that queries model titles, technical descriptions, and language tags concurrently.
-* **Platform Theme Swapper:** Instantly switch visual dynamics between **Quantum Indigo** (deep blue/indigo cosmic aesthetic) and **Matrix Emerald** (high-contrast emerald cybersecurity look).
-* **Secure Enterprise Contact Module:** Fully structured form interface allowing potential collaborators and organizations to transmit secure project parameters and communications directly.
+### Frontend Interface & Styling Framework
+*   **Core Languages:** HTML5, CSS3, JavaScript (ES6+)[cite: 1].
+*   **CSS Architecture:** Uses CSS custom properties (`:root` tokens) for dynamic theme management and high-end glassmorphism effects (`backdrop-filter: blur(16px)`)[cite: 1].
+*   **Responsive Grid:** Custom CSS grid (`.project-grid`) designed with mobile-first boundary and overlap fixes across viewports (< 768px, 980px, 1100px)[cite: 1].
 
----
-
-## **📂 5. ENTERPRISE DIRECTORY & FILE STRUCTURE**
-
-```text
-MuhammadHammad-dotcom/
-│
-├── index.html            # Main Enterprise Framework & Embedded Script Engine
-├── assets/
-│   ├── css/
-│   │   ├── main.css      # Core Design Framework Stylesheet
-│   │   └── noscript.css  # Fallback Styles for Non-Script Environments
-│   └── js/
-│       ├── jquery.min.js
-│       ├── main.js
-│       ├── util.js
-│       ├── breakpoints.min.js
-│       ├── browser.min.js
-│       └── jquery.scrollex.min.js
-└── README.md             # Comprehensive System Documentation
+### Asynchronous Pipeline Engine (`compilePipelineEngine`)
+The application fetches repository data upon DOM content load[cite: 1]:
+```javascript
+async function compilePipelineEngine() {
+    const response = await fetch(`[https://api.github.com/users/MuhammadHammad-dotcom/repos?sort=updated&per_page=30](https://api.github.com/users/MuhammadHammad-dotcom/repos?sort=updated&per_page=30)`);
+    if(!response.ok) throw new Error("API Limit Threshold Exception");
+    const repositories = await response.json();
+    // Parses and classifies repositories into Live Runtime or Development arrays.
+}
 
 ```
 
 ---
 
-## **⚡ 6. ASYNCHRONOUS DATA PIPELINE & GITHUB INTEGRATION**
+## 4. Featured Production Engines & Quantitative Modules
 
-The platform relies on a zero-error asynchronous pipeline controller (`compileEnterprisePipeline()`) designed to interface with the GitHub REST API (`https://api.github.com/users/MuhammadHammad-dotcom/repos`).
+1. **NEURAL-TRADE PRO: QUANTITATIVE ANALYTICS ENGINE**
 
-* **Automated Telemetry Ingestion:** Fetches up to 50 active repositories, sorting them by recent updates.
-* **Smart Asset Mapping:** Automatically tags projects based on repository names and descriptions (e.g., *Machine Learning*, *Streamlit SaaS*, *Data Science*, *Time Series*).
-* **Robust Fallback Vector:** In the event of an API rate limit threshold exception, the system automatically engages an embedded enterprise fallback data matrix to guarantee uninterrupted presentation.
+* **Environment:** Python / Streamlit
+
+
+* **Status:** Live Runtime Deployment
+
+
+* **Description:** Institutional computational trading terminal designed to map dynamic multi-asset vector variations, execute algorithmic backtests, and stream live analytical calculations.
+
+
+
+
+2. **INTELRISK: PREDICTIVE PORTFOLIO UNDERWRITING PLATFORM**
+
+* **Environment:** Data Science Engine
+
+
+* **Status:** Live Runtime Deployment
+
+
+* **Description:** Advanced analytical risk infrastructure utilizing statistical clustering and machine learning models to configure modern portfolio optimization and structured enterprise credit underwriting parameters.
+
+
+
+
+3. **INTELLIGENT INVENTORY LOGISTICS & ASSET CONTROL CORE**
+
+* **Environment:** SaaS Module
+
+
+* **Status:** Live Runtime Deployment
+
+
+* **Description:** Enterprise-grade real-time inventory tracking and supply-chain optimization platform engineered to balance operational logistical vectors and stream live asset validation metrics.
+
+
+
+
 
 ---
 
-## **💻 7. INSTALLATION & LOCAL DEPLOYMENT GUIDE**
+## 5. Local Setup & Deployment Guide
 
-To deploy or review this project locally on your machine, execute the following steps via your terminal:
+To run, inspect, or modify this portfolio terminal locally, follow these steps:
 
 1. **Clone the Repository:**
 ```bash
-git clone [https://github.com/MuhammadHammad-dotcom/MuhammadHammad-dotcom.git](https://github.com/MuhammadHammad-dotcom/MuhammadHammad-dotcom.git)
+git clone [https://github.com/MuhammadHammad-dotcom/MuhammadHammad-dotcom.github.io.git](https://github.com/MuhammadHammad-dotcom/MuhammadHammad-dotcom.github.io.git)
+cd MuhammadHammad-dotcom.github.io
 
 ```
 
 
-2. **Navigate to the Project Directory:**
+2. **Verify Directory Structure:** Ensure asset folders (`assets/css/`, `assets/js/`) are correctly linked.
+
+
+3. **Launch a Local HTTP Server** (to prevent CORS restrictions when executing fetch requests):
 ```bash
-cd MuhammadHammad-dotcom
+python3 -m http.server 8000
 
 ```
 
 
-3. **Execute and Launch:**
-* Open `index.html` directly in any modern web browser (Chrome, Firefox, Edge, Safari).
-* **Recommended:** Serve the directory locally using a development server extension like VS Code **Live Server** for optimal performance and local asset fetching.
+4. **Access the Terminal:** Open your browser and navigate to `http://localhost:8000`.
 
 
 
 ---
 
-## **🌐 8. PROFESSIONAL CONTACT & NETWORK MATRIX**
-
-Initialize enterprise collaboration or reach out for advanced technical architecture projects through the following channels:
-
-* **Base Location:** Karachi, Sindh, Pakistan
-* **GitHub Profile:** [MuhammadHammad-dotcom](https://github.com/MuhammadHammad-dotcom)
-* **LinkedIn Network:** [Muhammad Hammad](https://www.linkedin.com/in/muhammad-hammad-95a048320)
-* **Direct Communication Channel:** [mhammadmnaeem29@gmail.com](https://www.google.com/search?q=mailto%3Amhammadmnaeem29%40gmail.com)
-
----
-
-> **© Muhammad Hammad • All Enterprise Rights Reserved • Advanced Machine Learning & Data Science Quantum Architecture v15.0**
+*© 2026 Muhammad Hammad • All System Rights Reserved*
 
 ```
 
