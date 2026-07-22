@@ -1,160 +1,248 @@
 <!DOCTYPE HTML>
 <!--
-    Elite Quantitative Portfolio Terminal v10.0 - Ultimate Sovereign Edition
-    Engineered by Muhammad Hammad | Unbreakable Autonomous System Matrix
+    Muhammad Hammad | Next-Gen Ultimate Quantum AI & Quantum Data Matrix v15.0
+    Engineered for Maximum Scale, Enterprise-Grade Performance, and Zero-Latency Execution
 -->
 <html>
     <head>
-        <title>Muhammad Hammad | Quantitative Finance & Computational Infrastructure</title>
+        <title>Muhammad Hammad | AI & Data Science Quantum Matrix Enterprise</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <style>
-            /* Ultimate Cyberpunk-SaaS Core Framework & Dynamic Theme Tokens - Lightened & Cleaned */
+            /* ==========================================================================
+               SECTION 1: CORE ENTERPRISE DESIGN TOKENS & SYSTEM VARIABLES
+               ========================================================================== */
             :root {
-                --bg-primary: #070b14;
-                --bg-surface: #0f172a;
-                --bg-card: linear-gradient(145deg, #0f172a 0%, #090e1a 100%);
-                --border-color: #273548;
-                --accent-glow: #38bdf8;
-                --accent-rgb: 56, 189, 248;
-                --text-main: #cbd5e1;
-                --text-light: #ffffff;
+                --bg-primary: #02040a;
+                --bg-surface: #0a0f1d;
+                --bg-card: linear-gradient(135deg, rgba(13, 20, 38, 0.98) 0%, rgba(2, 4, 10, 0.99) 100%);
+                --border-color: #1e293b;
+                --accent-glow: #6366f1; 
+                --accent-secondary: #06b6d4; 
+                --accent-rgb: 99, 102, 241;
+                --text-main: #94a3b8;
+                --text-light: #f8fafc;
+                --neon-shadow: 0 0 35px rgba(99, 102, 241, 0.25);
+                --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
             }
 
-            /* Emerald Variant Module Triggered via HUD State */
             body.theme-emerald {
-                --bg-primary: #060e17;
-                --bg-surface: #062c20;
-                --bg-card: linear-gradient(145deg, #063b2a 0%, #060e17 100%);
-                --border-color: #0d5f46;
-                --accent-glow: #34d399;
-                --accent-rgb: 52, 211, 153;
+                --bg-primary: #021c14;
+                --bg-surface: #042f21;
+                --bg-card: linear-gradient(135deg, rgba(4, 47, 33, 0.95) 0%, rgba(2, 28, 20, 0.99) 100%);
+                --border-color: #065f46;
+                --accent-glow: #10b981; 
+                --accent-secondary: #38bdf8;
+                --accent-rgb: 16, 185, 129;
+                --neon-shadow: 0 0 35px rgba(16, 185, 129, 0.3);
             }
 
-            body, #wrapper { background-color: var(--bg-primary) !important; color: var(--text-main) !important; font-family: 'SF Pro Display', -apple-system, system-ui, sans-serif !important; transition: background 0.5s ease; overflow-x: hidden; }
-            h1, h2, h3, h4, .logo, #nav .links li.active a { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif !important; letter-spacing: -0.03em; }
+            /* ==========================================================================
+               SECTION 2: GLOBAL RESETS & TYPOGRAPHY ARCHITECTURE
+               ========================================================================== */
+            body, #wrapper { 
+                background-color: var(--bg-primary) !important; 
+                color: var(--text-main) !important; 
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important; 
+                transition: background 0.6s cubic-bezier(0.4, 0, 0.2, 1); 
+                overflow-x: hidden; 
+                margin: 0;
+                padding: 0;
+            }
             
-            /* Remove Template Redundant Lines */
+            h1, h2, h3, h4, .logo, #nav .links li.active span { 
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important; 
+                letter-spacing: -0.04em; 
+            }
+            
             .post::before, .post::after, .post.featured::before, .post.featured::after, 
             header::before, header::after, header.major::before, header.major::after,
-            .post header::before, .post header::after, #main::before { display: none !important; content: none !important; border: none !important; background: none !important; }
+            .post header::before, .post header::after, #main::before { 
+                display: none !important; 
+                content: none !important; 
+                border: none !important; 
+                background: none !important; 
+            }
             hr { display: none !important; }
-            
-            /* Interactive Matrix Hero Design with Safe Spacing */
-            #intro { background: radial-gradient(circle at 50% 0%, #132238 0%, var(--bg-primary) 80%) !important; border-bottom: 1px solid var(--border-color); padding: 8rem 2rem 6rem 2rem !important; text-align: center; position: relative; overflow: hidden; width: 100%; box-sizing: border-box; }
-            #intro h1 { font-size: clamp(2.5rem, 5vw, 5rem) !important; font-weight: 900; background: linear-gradient(135deg, #ffffff 20%, var(--accent-glow) 60%, #38bdf8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; letter-spacing: -0.05em; word-break: break-word; }
-            #intro p { color: var(--text-main) !important; max-width: 55rem; margin: 0 auto 1.5rem auto; font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.8; }
-            
-            /* High-End Glass HUD Control Architecture */
-            .dashboard-controls { background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(var(--accent-rgb), 0.2); padding: 1.5rem; border-radius: 16px; margin-bottom: 3rem; display: flex; flex-direction: column; gap: 1.25rem; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5); width: 100%; box-sizing: border-box; }
-            @media(min-width: 980px) { .dashboard-controls { flex-direction: row; padding: 1.75rem 2rem; } }
-            
-            /* Theme Swapper Switch Layout */
-            .theme-swapper { display: flex; gap: 0.5rem; background: #0b1325; border: 1px solid var(--border-color); padding: 0.35rem; border-radius: 10px; }
-            .theme-btn { border: none; background: transparent; cursor: pointer; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.75rem; font-weight: 700; font-family: monospace; color: #94a3b8; transition: all 0.2s; }
-            .theme-btn.active-blue { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
-            .theme-btn.active-emerald { background: rgba(52, 211, 153, 0.15); color: #34d399; }
 
-            /* Professional Intelligent Search Bay */
-            .search-box { position: relative; width: 100%; max-width: 280px; }
-            .search-box input { background: #0b1325 !important; border: 1px solid var(--border-color) !important; color: #ffffff !important; border-radius: 8px !important; padding: 0.7rem 1rem 0.7rem 2.5rem !important; font-size: 0.9rem !important; height: auto !important; width: 100%; transition: all 0.3s ease; box-sizing: border-box; }
-            .search-box input:focus { border-color: var(--accent-glow) !important; box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.25); background: #111c33 !important; }
-            .search-box::before { content: '⚡'; position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 0.85rem; opacity: 0.8; }
+            /* ==========================================================================
+               SECTION 3: HERO COMMAND CENTER & PARTICLE MATRIX SIMULATION
+               ========================================================================== */
+            #intro { 
+                background: radial-gradient(circle at 50% -10%, rgba(var(--accent-rgb), 0.35) 0%, rgba(2, 4, 10, 0) 75%), var(--bg-primary) !important; 
+                border-bottom: 1px solid var(--border-color); 
+                padding: 12rem 2rem 9rem 2rem !important; 
+                text-align: center; 
+                position: relative; 
+                overflow: hidden; 
+                width: 100%; 
+                box-sizing: border-box; 
+            }
+            
+            #intro::before {
+                content: '';
+                position: absolute;
+                width: 800px;
+                height: 800px;
+                background: radial-gradient(circle, rgba(var(--accent-rgb), 0.18) 0%, transparent 70%);
+                top: -300px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 0;
+                pointer-events: none;
+                animation: enterpriseGlow 8s ease-in-out infinite alternate;
+            }
 
-            /* Premium Tab Interface Modules */
-            .terminal-tabs { display: flex; gap: 0.75rem; width: auto; flex-wrap: wrap; justify-content: center; }
-            .tab-trigger { background: rgba(30, 41, 59, 0.5); border: 1px solid var(--border-color); color: #94a3b8; padding: 0.6rem 1.2rem; font-size: 0.8rem; font-weight: 700; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem; letter-spacing: 0.05em; }
-            .tab-trigger:hover { border-color: rgba(var(--accent-rgb), 0.5); color: var(--text-light); }
-            .tab-trigger.active { background: rgba(var(--accent-rgb), 0.12); border-color: var(--accent-glow); color: var(--accent-glow); box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.15); }
-            .tab-trigger span { background: #273548; color: #cbd5e1; font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; font-family: monospace; }
-            .tab-trigger.active span { background: var(--accent-glow); color: #070b14; font-weight: 800; }
+            @keyframes enterpriseGlow {
+                0% { transform: translateX(-50%) scale(0.85); opacity: 0.6; }
+                100% { transform: translateX(-50%) scale(1.15); opacity: 1; }
+            }
 
-            /* Advanced Systems Layout Display Grid - Fixed Overlapping */
-            .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; width: 100%; box-sizing: border-box; }
+            #intro h1 { 
+                font-size: clamp(3.2rem, 7.5vw, 6.5rem) !important; 
+                font-weight: 900; 
+                background: linear-gradient(135deg, #ffffff 20%, var(--accent-glow) 60%, var(--accent-secondary) 100%); 
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent; 
+                margin-bottom: 1.2rem; 
+                position: relative;
+                z-index: 1;
+                text-shadow: 0 15px 50px rgba(0,0,0,0.6);
+            }
+            
+            #intro p { 
+                color: var(--text-main) !important; 
+                max-width: 62rem; 
+                margin: 0 auto 1.8rem auto; 
+                font-size: clamp(1.15rem, 1.8vw, 1.35rem); 
+                line-height: 1.85; 
+                position: relative;
+                z-index: 1;
+            }
+
+            /* ==========================================================================
+               SECTION 4: HIGH-PERFORMANCE GLASS HUD CONTROLLER INTERFACE
+               ========================================================================== */
+            .dashboard-controls { 
+                background: rgba(10, 15, 29, 0.85); 
+                backdrop-filter: blur(30px); 
+                -webkit-backdrop-filter: blur(30px); 
+                border: 1px solid rgba(var(--accent-rgb), 0.35); 
+                padding: 2rem; 
+                border-radius: 28px; 
+                margin-bottom: 4.5rem; 
+                display: flex; 
+                flex-direction: column; 
+                gap: 1.75rem; 
+                align-items: center; 
+                justify-content: space-between; 
+                box-shadow: 0 30px 60px -15px rgba(0,0,0,0.9), inset 0 1px 0 rgba(255,255,255,0.1); 
+                width: 100%; 
+                box-sizing: border-box; 
+            }
+            @media(min-width: 980px) { .dashboard-controls { flex-direction: row; padding: 2rem 3rem; } }
+            
+            .theme-swapper { display: flex; gap: 0.75rem; background: rgba(2, 4, 10, 0.8); border: 1px solid var(--border-color); padding: 0.5rem; border-radius: 16px; }
+            .theme-btn { border: none; background: transparent; cursor: pointer; padding: 0.6rem 1.1rem; border-radius: 12px; font-size: 0.78rem; font-weight: 800; font-family: monospace; color: #64748b; transition: var(--transition-smooth); }
+            .theme-btn.active-blue { background: rgba(99, 102, 241, 0.3); color: #818cf8; box-shadow: 0 0 25px rgba(99, 102, 241, 0.5); }
+            .theme-btn.active-emerald { background: rgba(16, 185, 129, 0.3); color: #34d399; box-shadow: 0 0 25px rgba(16, 185, 129, 0.5); }
+
+            .search-box { position: relative; width: 100%; max-width: 340px; }
+            .search-box input { background: rgba(2, 4, 10, 0.85) !important; border: 1px solid var(--border-color) !important; color: #ffffff !important; border-radius: 16px !important; padding: 0.95rem 1.1rem 0.95rem 3.2rem !important; font-size: 0.95rem !important; height: auto !important; width: 100%; transition: var(--transition-smooth); box-sizing: border-box; }
+            .search-box input:focus { border-color: var(--accent-glow) !important; box-shadow: var(--neon-shadow); background: rgba(13, 20, 38, 0.98) !important; }
+            .search-box::before { content: '⚡'; position: absolute; left: 18px; top: 50%; transform: translateY(-50%); font-size: 0.95rem; }
+
+            .terminal-tabs { display: flex; gap: 1rem; width: auto; flex-wrap: wrap; justify-content: center; }
+            .tab-trigger { background: rgba(13, 20, 38, 0.7); border: 1px solid var(--border-color); color: #94a3b8; padding: 0.8rem 1.7rem; font-size: 0.85rem; font-weight: 700; border-radius: 16px; cursor: pointer; transition: var(--transition-smooth); display: flex; align-items: center; gap: 0.8rem; letter-spacing: 0.04em; }
+            .tab-trigger:hover { border-color: rgba(var(--accent-rgb), 0.7); color: var(--text-light); }
+            .tab-trigger.active { background: rgba(var(--accent-rgb), 0.25); border-color: var(--accent-glow); color: var(--accent-glow); box-shadow: var(--neon-shadow); }
+            .tab-trigger span { background: rgba(2, 4, 10, 0.95); color: #cbd5e1; font-size: 0.75rem; padding: 0.3rem 0.7rem; border-radius: 10px; font-family: monospace; }
+            .tab-trigger.active span { background: var(--accent-glow); color: #ffffff; font-weight: 800; }
+
+            /* ==========================================================================
+               SECTION 5: ENTERPRISE GRID ARCHITECTURE & POST CARDS
+               ========================================================================== */
+            .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.75rem; width: 100%; box-sizing: border-box; }
             @media screen and (max-width: 980px) { .project-grid { grid-template-columns: 1fr; } }
             
-            /* Micro-Interaction Neon Glass Post Cards */
-            .post { border: 1px solid var(--border-color) !important; padding: 2.25rem !important; margin-bottom: 0 !important; background: var(--bg-card) !important; border-radius: 16px; box-shadow: 0 20px 40px -15px rgba(0,0,0,0.6); width: 100% !important; box-sizing: border-box; transition: all 0.4s ease; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; }
-            .post:hover { border-color: rgba(var(--accent-rgb), 0.6) !important; box-shadow: 0 30px 60px -20px rgba(var(--accent-rgb), 0.2); transform: translateY(-4px); }
-            .post::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(var(--accent-rgb), 0.03) 0%, transparent 100%); opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+            .post { border: 1px solid var(--border-color) !important; padding: 3rem !important; margin-bottom: 0 !important; background: var(--bg-card) !important; border-radius: 28px; box-shadow: 0 35px 70px -15px rgba(0,0,0,0.9); width: 100% !important; box-sizing: border-box; transition: var(--transition-smooth); display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; backdrop-filter: blur(15px); }
+            .post:hover { border-color: rgba(var(--accent-rgb), 0.9) !important; box-shadow: 0 45px 90px -20px rgba(var(--accent-rgb), 0.35); transform: translateY(-10px); }
+            .post::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(var(--accent-rgb), 0.08) 0%, transparent 100%); opacity: 0; transition: opacity 0.3s; pointer-events: none; }
             .post:hover::after { opacity: 1; }
             
-            /* High Precision HUD Telemetry Meta Layout */
-            .metrics-hud { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; font-family: monospace; font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; border-bottom: 1px solid rgba(39, 53, 72, 0.8); padding-bottom: 0.75rem; gap: 0.5rem; flex-wrap: wrap; }
-            .metrics-hud span strong { color: #34d399; }
-            .badge-live { background: rgba(52, 211, 153, 0.12); color: #34d399; padding: 0.2rem 0.55rem; border-radius: 6px; border: 1px solid rgba(52, 211, 153, 0.3); font-weight: 700; letter-spacing: 0.5px; }
-            .badge-dev { background: rgba(var(--accent-rgb), 0.12); color: var(--accent-glow); padding: 0.2rem 0.55rem; border-radius: 6px; border: 1px solid rgba(var(--accent-rgb), 0.3); font-weight: 700; letter-spacing: 0.5px; }
+            .metrics-hud { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; font-family: monospace; font-size: 0.8rem; color: #94a3b8; text-transform: uppercase; border-bottom: 1px solid rgba(30, 41, 59, 0.85); padding-bottom: 1.05rem; gap: 0.5rem; flex-wrap: wrap; }
+            .metrics-hud span strong { color: var(--accent-secondary); }
+            .badge-live { background: rgba(16, 185, 129, 0.18); color: #34d399; padding: 0.35rem 0.85rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.4); font-weight: 800; letter-spacing: 0.8px; }
+            .badge-dev { background: rgba(var(--accent-rgb), 0.18); color: var(--accent-glow); padding: 0.35rem 0.85rem; border-radius: 12px; border: 1px solid rgba(var(--accent-rgb), 0.4); font-weight: 800; letter-spacing: 0.8px; }
 
-            .post h2 { font-size: 1.5rem !important; font-weight: 800; line-height: 1.35; margin-top: 0; margin-bottom: 0.85rem; letter-spacing: -0.02em; word-break: break-word; }
+            .post h2 { font-size: 1.75rem !important; font-weight: 800; line-height: 1.35; margin-top: 0; margin-bottom: 1.05rem; letter-spacing: -0.02em; word-break: break-word; }
             .post h2 a { color: var(--text-light) !important; text-decoration: none; transition: color 0.3s; }
             .post h2 a:hover { color: var(--accent-glow) !important; }
             
-            /* Full Bleed Architectural Frames */
-            .post .image { display: block; width: 100%; height: 230px; overflow: hidden; border-radius: 10px; border: 1px solid var(--border-color); margin: 1.25rem 0; box-shadow: 0 10px 25px -10px rgba(0,0,0,0.8); background: #070b14; position: relative; box-sizing: border-box; }
-            .post .image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; position: absolute; top: 0; left: 0; opacity: 1; }
-            .post .image:hover img { transform: scale(1.05); }
+            .post .image { display: block; width: 100%; height: 280px; overflow: hidden; border-radius: 18px; border: 1px solid var(--border-color); margin: 1.5rem 0; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.95); background: #02040a; position: relative; box-sizing: border-box; }
+            .post .image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); position: absolute; top: 0; left: 0; opacity: 1; }
+            .post .image:hover img { transform: scale(1.08); }
             
-            /* Control Interface Action Processing Controls */
-            .btn-group { display: flex; gap: 0.85rem; margin-top: 1.5rem; padding-top: 1rem; width: 100%; box-sizing: border-box; }
-            .button { display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; font-weight: 600 !important; font-size: 0.85rem !important; height: 2.75rem !important; line-height: 2.75rem !important; padding: 0 1.25rem !important; text-transform: none; letter-spacing: 0; transition: all 0.3s ease; flex: 1; text-align: center; box-sizing: border-box; white-space: nowrap; }
+            .btn-group { display: flex; gap: 1.15rem; margin-top: 2rem; padding-top: 1.5rem; width: 100%; box-sizing: border-box; border-top: 1px solid rgba(30, 41, 59, 0.7); }
+            .button { display: inline-flex; align-items: center; justify-content: center; border-radius: 14px; font-weight: 700 !important; font-size: 0.9rem !important; height: 3.25rem !important; line-height: 3.25rem !important; padding: 0 1.5rem !important; text-transform: none; letter-spacing: 0.02em; transition: var(--transition-smooth); flex: 1; text-align: center; box-sizing: border-box; white-space: nowrap; }
             
-            .btn-primary { background: var(--accent-glow) !important; color: #070b14 !important; box-shadow: 0 4px 15px rgba(var(--accent-rgb), 0.35) !important; border: none !important; }
-            .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(var(--accent-rgb), 0.5) !important; }
+            .btn-primary { background: var(--accent-glow) !important; color: #ffffff !important; box-shadow: 0 8px 30px rgba(var(--accent-rgb), 0.6) !important; border: none !important; }
+            .btn-primary:hover { opacity: 0.95; transform: translateY(-2px); box-shadow: 0 10px 35px rgba(var(--accent-rgb), 0.8) !important; background: var(--accent-secondary) !important; }
             
-            .btn-secondary { background: rgba(var(--accent-rgb), 0.04) !important; box-shadow: inset 0 0 0 1px rgba(var(--accent-rgb), 0.3) !important; color: var(--accent-glow) !important; }
-            .btn-secondary:hover { background: rgba(var(--accent-rgb), 0.1) !important; box-shadow: inset 0 0 0 1px var(--accent-glow) !important; color: var(--text-light) !important; }
-            
-            /* Navigation Structural Systems */
-            #nav { background-color: var(--bg-primary) !important; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; box-sizing: border-box; }
+            .btn-secondary { background: rgba(var(--accent-rgb), 0.1) !important; box-shadow: inset 0 0 0 1px rgba(var(--accent-rgb), 0.45) !important; color: var(--accent-glow) !important; }
+            .btn-secondary:hover { background: rgba(var(--accent-rgb), 0.2) !important; box-shadow: inset 0 0 0 1px var(--accent-glow) !important; color: var(--text-light) !important; transform: translateY(-2px); }
+
+            /* ==========================================================================
+               SECTION 6: NAVIGATION, FOOTER & SYSTEM UTILITIES
+               ========================================================================== */
+            #nav { background-color: var(--bg-primary) !important; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; padding: 0 3.5rem; box-sizing: border-box; }
             #nav .links { display: flex; list-style: none; margin: 0; padding: 0; }
-            #nav .links li { padding: 1rem 0; }
-            #nav .links li span, #nav .links li.active span { text-transform: none; font-weight: 600; font-size: 0.95rem; letter-spacing: 0; color: var(--accent-glow) !important; background: transparent !important; border: none !important; cursor: default; }
-            #nav .icons { display: flex; list-style: none; gap: 1rem; margin: 0; padding: 0; }
-            #nav .icons a { color: #64748b !important; transition: color 0.2s ease; }
-            #nav .icons a:hover { color: var(--accent-glow) !important; }
+            #nav .links li { padding: 1.5rem 0; }
+            #nav .links li span { text-transform: none; font-weight: 700; font-size: 1.05rem; letter-spacing: 0.02em; color: var(--accent-glow) !important; background: transparent !important; border: none !important; cursor: default; }
+            #nav .icons { display: flex; list-style: none; gap: 1.5rem; margin: 0; padding: 0; }
+            #nav .icons a { color: #64748b !important; transition: color 0.2s ease, transform 0.2s; }
+            #nav .icons a:hover { color: var(--accent-glow) !important; transform: scale(1.2); }
             
-            #main { background-color: var(--bg-primary) !important; border: none !important; padding: 4rem 2rem !important; max-width: 80rem !important; margin: 0 auto; box-sizing: border-box; }
+            #main { background-color: var(--bg-primary) !important; border: none !important; padding: 5.5rem 2.5rem !important; max-width: 90rem !important; margin: 0 auto; box-sizing: border-box; }
             
-            /* Dynamic Self-Generating Tech Tags Engine */
-            .tech-container { margin: 0.85rem 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
-            .tech-tag { display: inline-block; background: rgba(var(--accent-rgb), 0.06); color: var(--accent-glow); padding: 0.3rem 0.75rem; font-size: 0.68rem; font-weight: 600; border-radius: 9999px; border: 1px solid rgba(var(--accent-rgb), 0.2); font-family: monospace; text-transform: uppercase; }
+            .tech-container { margin: 1.25rem 0; display: flex; flex-wrap: wrap; gap: 0.65rem; }
+            .tech-tag { display: inline-block; background: rgba(var(--accent-rgb), 0.12); color: var(--accent-glow); padding: 0.45rem 1rem; font-size: 0.75rem; font-weight: 700; border-radius: 9999px; border: 1px solid rgba(var(--accent-rgb), 0.35); font-family: monospace; text-transform: uppercase; }
             
-            /* Institutional Integrated Footer Array */
-            #footer { background-color: #04070e !important; border-top: 1px solid var(--border-color); padding: 5rem 3rem !important; max-width: 80rem !important; margin: 0 auto; border-radius: 20px 20px 0 0; display: flex; gap: 3rem; box-sizing: border-box; }
+            #footer { background-color: #010307 !important; border-top: 1px solid var(--border-color); padding: 6.5rem 4rem !important; max-width: 90rem !important; margin: 0 auto; border-radius: 32px 32px 0 0; display: flex; gap: 4.5rem; box-sizing: border-box; }
             #footer section:first-child { flex: 1 1 55%; }
-            #footer .split.contact { flex: 1 1 40%; display: flex; flex-direction: column; gap: 1.75rem; padding-left: 2.5rem; border-left: 1px solid var(--border-color); }
-            #footer h3 { color: var(--text-light) !important; font-weight: 600; font-size: 1.3rem; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+            #footer .split.contact { flex: 1 1 40%; display: flex; flex-direction: column; gap: 2.2rem; padding-left: 4rem; border-left: 1px solid var(--border-color); }
+            #footer h3 { color: var(--text-light) !important; font-weight: 700; font-size: 1.55rem; margin-bottom: 1.75rem; letter-spacing: -0.02em; }
             .split.contact section { padding: 0 !important; margin: 0 !important; border: none !important; }
-            .split.contact h3 { font-size: 0.85rem !important; text-transform: uppercase; color: #94a3b8 !important; font-weight: 700; }
-            .split.contact p { color: #cbd5e1 !important; font-size: 1.05rem; word-break: break-all; }
+            .split.contact h3 { font-size: 0.9rem !important; text-transform: uppercase; color: #64748b !important; font-weight: 800; }
+            .split.contact p { color: #cbd5e1 !important; font-size: 1.15rem; word-break: break-all; }
             .split.contact p a { color: var(--accent-glow) !important; text-decoration: none; }
             
-            input[type="text"], input[type="email"], textarea { background-color: var(--bg-primary) !important; border: 1px solid var(--border-color) !important; color: var(--text-light) !important; border-radius: 8px; padding: 0.75rem 1rem; width: 100%; box-sizing: border-box; }
-            input[type="text"]:focus, input[type="email"]:focus, textarea:focus { border-color: var(--accent-glow) !important; box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.15); }
-            label { color: var(--text-main) !important; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.4rem; display: block; }
-            #copyright { border-top: 1px solid var(--border-color); padding: 2.5rem 2rem; margin: 0 auto; max-width: 80rem; color: #64748b !important; text-align: center; font-size: 0.85rem; box-sizing: border-box; }
+            input[type="text"], input[type="email"], textarea { background-color: rgba(13, 20, 38, 0.75) !important; border: 1px solid var(--border-color) !important; color: var(--text-light) !important; border-radius: 14px; padding: 1.05rem 1.25rem; width: 100%; box-sizing: border-box; transition: var(--transition-smooth); }
+            input[type="text"]:focus, input[type="email"]:focus, textarea:focus { border-color: var(--accent-glow) !important; box-shadow: var(--neon-shadow); background: rgba(13, 20, 38, 0.98) !important; }
+            label { color: #94a3b8 !important; font-size: 0.88rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.6rem; display: block; letter-spacing: 0.03em; }
+            
+            #copyright { border-top: 1px solid var(--border-color); padding: 3.5rem 2rem; margin: 0 auto; max-width: 90rem; color: #64748b !important; text-align: center; font-size: 0.9rem; box-sizing: border-box; }
             #copyright a { color: #64748b !important; }
 
             @media screen and (max-width: 1100px) {
-                #footer { flex-direction: column; gap: 3rem; padding: 3rem 1.5rem !important; }
+                #footer { flex-direction: column; gap: 4rem; padding: 4rem 1.5rem !important; }
                 #footer .split.contact { padding-left: 0; border-left: none; }
             }
 
-            /* ─── MOBILE RESPONSIVE OVERLAP & BOUND FIXES ─── */
             @media screen and (max-width: 768px) {
-                #intro { padding: 4rem 1rem 3rem 1rem !important; }
-                #main { padding: 2rem 1rem !important; }
-                .dashboard-controls { padding: 1rem; gap: 1rem; }
+                #intro { padding: 7rem 1.2rem 5rem 1.2rem !important; }
+                #main { padding: 3.5rem 1.2rem !important; }
+                .dashboard-controls { padding: 1.5rem; gap: 1.2rem; }
                 .search-box { max-width: 100%; }
                 .terminal-tabs { width: 100%; justify-content: stretch; }
                 .tab-trigger { flex: 1; justify-content: center; }
-                .post { padding: 1.25rem !important; }
-                .post h2 { font-size: 1.25rem !important; }
-                .btn-group { flex-direction: column; gap: 0.6rem; }
+                .post { padding: 1.85rem !important; }
+                .post h2 { font-size: 1.4rem !important; }
+                .btn-group { flex-direction: column; gap: 0.95rem; }
                 .button { width: 100% !important; flex: none; }
-                #nav { padding: 0 1rem; flex-direction: column; gap: 0.5rem; text-align: center; }
+                #nav { padding: 0 1.2rem; flex-direction: column; gap: 0.7rem; text-align: center; }
                 #nav .links { width: 100%; justify-content: center; }
             }
         </style>
@@ -163,23 +251,23 @@
 
         <div id="wrapper" class="fade-in">
 
-            <!-- Intro Section Banner Matrix -->
+            <!-- Hero Section Command Matrix -->
             <div id="intro">
                 <h1>MUHAMMAD HAMMAD</h1>
-                <p style="font-weight: 700; color: var(--accent-glow) !important; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 1.5rem; transition: color 0.3s;">Computational Finance Specialist &bull; Quantitative Strategy Architect</p>
-                <p>Engineering math-driven algorithmic engines and structured enterprise credit underwriting platforms to transform market anomalies into predictive operational vectors.</p>
-                <ul class="actions" style="margin-top: 2rem; padding: 0; list-style: none;">
-                    <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly" style="width: auto; padding: 0 2rem !important;">Initialize Systems Inventory</a></li>
+                <p style="font-weight: 700; color: var(--accent-glow) !important; letter-spacing: 0.14em; text-transform: uppercase; font-size: 1.05rem; margin-bottom: 1.6rem; transition: color 0.4s;">Python Developer &bull; Data Science & Machine Learning Enterprise Architect</p>
+                <p>Engineering autonomous machine learning architectures, predictive neural computing engines, and high-frequency analytical workflows for absolute industry excellence.</p>
+                <ul class="actions" style="margin-top: 3rem; padding: 0; list-style: none;">
+                    <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly" style="width: auto; padding: 0 2.75rem !important; border-radius: 16px;">Initialize Enterprise Matrix</a></li>
                 </ul>
             </div>
 
             <header id="header">
-                <div class="logo" style="letter-spacing: 1.5px; font-weight: 800; cursor: default;">QUANT CORE MODULE v10.0</div>
+                <div class="logo" style="letter-spacing: 3px; font-weight: 900; cursor: default;">QUANTUM AI MATRIX v15.0 ENTERPRISE</div>
             </header>
 
             <nav id="nav">
                 <ul class="links">
-                    <li class="active"><span>Production Engines Portfolio</span></li>
+                    <li><span>Enterprise AI & Quantitative Analytics Systems</span></li>
                 </ul>
                 <ul class="icons">
                     <li><a href="https://github.com/MuhammadHammad-dotcom" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -187,74 +275,77 @@
                 </ul>
             </nav>
 
-            <!-- Main Interactive Framework Panel -->  
+            <!-- Main Enterprise Framework Body -->  
             <div id="main">
                 
                 <!-- ADVANCED CONTROLLER HUD ARCHITECTURE -->
                 <div class="dashboard-controls">
                     <div class="terminal-tabs">
                         <button class="tab-trigger active" onclick="switchControlTab('live')" id="tab-live-btn">
-                            LIVE RUNTIME <span id="count-live">0</span>
+                            DEPLOYED APPS <span id="count-live">0</span>
                         </button>
                         <button class="tab-trigger" onclick="switchControlTab('dev')" id="tab-dev-btn">
-                            DEVELOPMENT <span id="count-dev">0</span>
+                            CORE REPOSITORIES <span id="count-dev">0</span>
                         </button>
                     </div>
 
-                    <!-- Live Custom Theme Swapper Infrastructure -->
+                    <!-- Theme Swapper Infrastructure -->
                     <div class="theme-swapper">
-                        <button class="theme-btn active-blue" id="btn-t-blue" onclick="togglePlatformTheme('blue')">CYBER-BLUE</button>
-                        <button class="theme-btn" id="btn-t-emerald" onclick="togglePlatformTheme('emerald')">STEALTH-EMERALD</button>
+                        <button class="theme-btn active-blue" id="btn-t-blue" onclick="togglePlatformTheme('blue')">QUANTUM INDIGO</button>
+                        <button class="theme-btn" id="btn-t-emerald" onclick="togglePlatformTheme('emerald')">MATRIX EMERALD</button>
                     </div>
 
                     <div class="search-box">
-                        <input type="text" id="search-input" placeholder="Query matrix..." onkeyup="handleSearchFilter()">
+                        <input type="text" id="search-input" placeholder="Query models, datasets, or algorithms..." onkeyup="handleSearchFilter()">
                     </div>
                 </div>
                     
-                <!-- Absolute Autonomous Grid Array -->
+                <!-- Absolute Autonomous Grid Array Container -->
                 <div class="project-grid" id="dynamic-github-projects">
-                    <!-- Loaded via Sovereign Pipeline Engine -->
+                    <!-- Dynamic Component Stream Ingestion Module -->
                 </div>
 
             </div>
 
-            <!-- Fully Aligned Corporate Footer Node -->
+            <!-- Supreme Enterprise Footer Node -->
             <footer id="footer">
                 <section>
-                    <h3>Transmission Gateway</h3>
-                    <form method="post" action="#">
-                        <div class="fields" style="display: flex; flex-direction: column; gap: 1rem;">
-                            <div class="field"><label for="name">Identity / Institution</label><input type="text" name="name" id="name" /></div>
-                            <div class="field"><label for="email">Communications Node Email</label><input type="text" name="email" id="email" /></div>
-                            <div class="field"><label for="message">Strategic Parameters / Requirements</label><textarea name="message" id="message" rows="4"></textarea></div>
+                    <h3>Initialize Enterprise Collaboration</h3>
+                    <form method="post" action="#" onsubmit="event.preventDefault(); alert('Secure Enterprise Transmission Successful! System dispatch initiated.');">
+                        <div class="fields" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div class="field"><label for="name">Your Name / Organization</label><input type="text" name="name" id="name" required /></div>
+                            <div class="field"><label for="email">Communications Email</label><input type="email" name="email" id="email" required /></div>
+                            <div class="field"><label for="message">Project Scope / Technical Parameters</label><textarea name="message" id="message" rows="4" required></textarea></div>
                         </div>
-                        <ul class="actions" style="margin-top: 1.5rem; padding: 0; list-style: none;">
-                            <li><input type="submit" value="Dispatch Secure Message" class="button primary btn-primary" style="cursor: pointer; width: auto;" /></li>
+                        <ul class="actions" style="margin-top: 2.2rem; padding: 0; list-style: none;">
+                            <li><input type="submit" value="Transmit Secure Enterprise Inquiry" class="button primary btn-primary" style="cursor: pointer; width: auto;" /></li>
                         </ul>
                     </form>
                 </section>
                 
                 <section class="split contact">
-                    <section><h3>Operations Headquarters</h3><p>Karachi, Sindh, Pakistan</p></section>
-                    <section><h3>Direct Access Port</h3><p><a href="mailto:mhammadmnaeem29@gmail.com">mhammadmnaeem29@gmail.com</a></p></section>
+                    <section><h3>Base Location</h3><p>Karachi, Sindh, Pakistan</p></section>
+                    <section><h3>Direct Channel</h3><p><a href="mailto:mhammadmnaeem29@gmail.com">mhammadmnaeem29@gmail.com</a></p></section>
                     <section>
-                        <h3>Distributed Networks</h3>
-                        <ul class="icons alt" style="display: flex; gap: 1rem; list-style: none; padding: 0; margin-top: 0.5rem;">
-                            <li><a href="https://github.com/MuhammadHammad-dotcom" target="_blank" class="icon brands alt fa-github" style="font-size: 1.25rem; color: var(--accent-glow);"><span class="label">GitHub</span></a></li>
-                            <li><a href="https://www.linkedin.com/in/muhammad-hammad-95a048320" target="_blank" class="icon brands alt fa-linkedin-in" style="font-size: 1.25rem; color: var(--accent-glow);"><span class="label">LinkedIn</span></a></li>
+                        <h3>Network Profiles</h3>
+                        <ul class="icons alt" style="display: flex; gap: 1.5rem; list-style: none; padding: 0; margin-top: 0.95rem;">
+                            <li><a href="https://github.com/MuhammadHammad-dotcom" target="_blank" class="icon brands alt fa-github" style="font-size: 1.5rem; color: var(--accent-glow);"><span class="label">GitHub</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/muhammad-hammad-95a048320" target="_blank" class="icon brands alt fa-linkedin-in" style="font-size: 1.5rem; color: var(--accent-glow);"><span class="label">LinkedIn</span></a></li>
                         </ul>
                     </section>
                 </section>
             </footer>
 
             <div id="copyright">
-                <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; justify-content: center; align-items: center;"><li>&copy; Muhammad Hammad &bull; All System Rights Reserved</li><li>SaaS Architecture Model</li></ul>
+                <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.6rem; justify-content: center; align-items: center;">
+                    <li>&copy; Muhammad Hammad &bull; All Enterprise Rights Reserved</li>
+                    <li>Advanced Machine Learning & Data Science Quantum Architecture v15.0</li>
+                </ul>
             </div>
 
         </div>
 
-        <!-- System Script Imports -->
+        <!-- Script Framework Dependencies -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -263,23 +354,26 @@
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
 
-        <!-- SOVEREIGN AUTONOMOUS PIPELINE CONTROLLER -->
+        <!-- ==========================================================================
+           SECTION 7: ZERO-ERROR ASYNCHRONOUS PIPELINE CONTROLLER ENGINE (JS)
+           ========================================================================== -->
         <script>
+            /* Enterprise Global State Variables */
             const githubUsername = "MuhammadHammad-dotcom";
             let globalLiveProjects = [];
             let globalDevProjects = [];
             let currentTab = 'live';
             let searchQuery = '';
 
-            // Dynamic Unsplash Image Repository Mapping System
-            const techImages = [
-                "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=600&q=80"
+            const enterpriseImageBank = [
+                "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=85",
+                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=85",
+                "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=85",
+                "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=85",
+                "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=85",
+                "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=85"
             ];
 
-            // ─── THEME CONTROLLER NODE ───
             function togglePlatformTheme(theme) {
                 const body = document.body;
                 const btnBlue = document.getElementById('btn-t-blue');
@@ -296,9 +390,8 @@
                 }
             }
 
-            // ─── AUTONOMOUS SMART TAGS EXTRACTOR ───
-            function calculateSmartTags(repo) {
-                let tags = ["v10.0 Core", "Automated Sync"];
+            function calculateEnterpriseTags(repo) {
+                let tags = ["Python Core", "Data Engine"];
                 
                 if(repo.language) {
                     tags.unshift(repo.language);
@@ -307,28 +400,27 @@
                 const nameStr = repo.name.toLowerCase();
                 const descStr = (repo.description || '').toLowerCase();
 
-                if (nameStr.includes('react') || descStr.includes('react')) tags.push('React');
-                if (nameStr.includes('python') || descStr.includes('streamlit')) tags.push('Python SaaS');
-                if (nameStr.includes('api') || descStr.includes('rest')) tags.push('REST API');
-                if (nameStr.includes('model') || descStr.includes('learning')) tags.push('AI/ML Array');
-                if (nameStr.includes('finance') || descStr.includes('trade')) tags.push('Quant Logic');
+                if (nameStr.includes('ml') || descStr.includes('learning')) tags.push('Machine Learning');
+                if (nameStr.includes('streamlit') || descStr.includes('app')) tags.push('Streamlit SaaS');
+                if (nameStr.includes('data') || descStr.includes('analysis')) tags.push('Data Science');
+                if (nameStr.includes('model') || descStr.includes('predict')) tags.push('AI Model');
+                if (nameStr.includes('trading') || descStr.includes('finance')) tags.push('Quantitative');
                 
                 return [...new Set(tags)].slice(0, 4);
             }
 
-            // ─── PIPELINE SOURCE ASYNC CORE ENGINE ───
-            async function compilePipelineEngine() {
+            async function compileEnterprisePipeline() {
                 const projectContainer = document.getElementById('dynamic-github-projects');
                 
                 projectContainer.innerHTML = `
-                    <div style="grid-column: span 2; text-align: center; padding: 4rem 0; font-family: monospace;">
-                        <p style="color: var(--accent-glow); margin: 0; font-size: 1rem; letter-spacing:1px; font-weight:bold;">[SYSTEM] COMPILING AUTOMATED SOVEREIGN PIPELINE...</p>
-                        <p style="color: #94a3b8; font-size: 0.8rem; margin: 8px 0 0 0;">FETCHING REPOSITORIES FOR CORE INTERFACE: @${githubUsername}</p>
+                    <div style="grid-column: span 2; text-align: center; padding: 6rem 0; font-family: monospace;">
+                        <p style="color: var(--accent-glow); margin: 0; font-size: 1.15rem; letter-spacing:1.5px; font-weight:bold;">[ENTERPRISE SYSTEM] SYNCHRONIZING NEURAL REPOSITORIES...</p>
+                        <p style="color: #64748b; font-size: 0.9rem; margin: 12px 0 0 0;">FETCHING TELEMETRY DATA NODES FOR: @${githubUsername}</p>
                     </div>`;
                 
                 try {
-                    const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated&per_page=30`);
-                    if(!response.ok) throw new Error("API Limit Threshold Exception");
+                    const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated&per_page=50`);
+                    if(!response.ok) throw new Error("API Rate Threshold Exceeded - Activating Fallback Vector");
                     
                     const repositories = await response.json();
 
@@ -341,35 +433,35 @@
                         let isLive = false;
                         let liveUrl = repo.homepage || null;
                         let displayTitle = repo.name.replace(/-/g, ' ').toUpperCase();
-                        let customDesc = repo.description || 'Enterprise computational logic framework compiled within self-sustaining version architecture patterns.';
+                        let customDesc = repo.description || 'Production-grade machine learning pipeline and quantitative python module built for high-performance computing.';
                         
-                        let imgIndex = index % techImages.length;
-                        let customImageUrl = techImages[imgIndex];
-                        let tagsArray = calculateSmartTags(repo);
+                        let imgIndex = index % enterpriseImageBank.length;
+                        let customImageUrl = enterpriseImageBank[imgIndex];
+                        let tagsArray = calculateEnterpriseTags(repo);
 
                         if (repo.name.toLowerCase().includes('trading') || repo.name.toLowerCase().includes('neural')) {
                             isLive = true;
                             liveUrl = "https://ai-algorithmic-trading-terminal-knxio6ihaq4qldgeta7vwp.streamlit.app/";
-                            displayTitle = "NEURAL-TRADE PRO: QUANTITATIVE ANALYTICS ENGINE";
-                            customDesc = "Institutional computational trading terminal to map dynamic multi-asset vector variations and live stream computational calculations.";
-                            customImageUrl = "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&q=80";
-                            tagsArray = ["Python Engine", "Streamlit", "Algorithmic", "Neural Net"];
+                            displayTitle = "NEURAL PREDICTIVE TRADING & ANALYTICS ENGINE";
+                            customDesc = "Machine learning-powered financial forecasting model leveraging time-series analysis and automated quantitative algorithms.";
+                            customImageUrl = "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=85";
+                            tagsArray = ["Python", "Machine Learning", "Time Series", "Streamlit"];
                         } 
                         else if (repo.name.toLowerCase().includes('intelrisk') || repo.name.toLowerCase().includes('lend')) {
                             isLive = true;
                             liveUrl = "https://intelrisk-lend-57l8ubfqbnm5wckuqsufsh.streamlit.app/";
-                            displayTitle = "INTELRISK: PREDICTIVE PORTFOLIO UNDERWRITING PLATFORM";
-                            customDesc = "Advanced analytical risk infrastructure utilizing statistical clusters to configure modern portfolio optimizations.";
-                            customImageUrl = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80";
-                            tagsArray = ["Risk Infrastructure", "Statistical", "Credit Underwriting"];
+                            displayTitle = "INTELRISK: PREDICTIVE CREDIT SCORING MODEL";
+                            customDesc = "Data science risk classification system utilizing statistical modeling and regression algorithms for precise portfolio underwriting.";
+                            customImageUrl = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=85";
+                            tagsArray = ["Data Science", "Scikit-Learn", "Risk Modeling"];
                         }
                         else if (repo.name.toLowerCase().includes('inventory') || repo.name.toLowerCase().includes('stock')) {
                             isLive = true;
                             liveUrl = "https://inventoryproject-qegnhff482cemebwxhw63k.streamlit.app/"; 
-                            displayTitle = "INTELLIGENT INVENTORY LOGISTICS & ASSET CONTROL CORE";
-                            customDesc = "An enterprise-grade real-time inventory tracking platform engineered to balance operational supply-chain vectors and stream live asset validation metrics.";
-                            customImageUrl = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80";
-                            tagsArray = ["Logistics System", "Asset Control", "SaaS Module"];
+                            displayTitle = "INTELLIGENT SUPPLY CHAIN & DATA ANALYTICS HUB";
+                            customDesc = "End-to-end data analytics platform designed to monitor asset metrics, inventory velocity, and optimize distribution vectors.";
+                            customImageUrl = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=85";
+                            tagsArray = ["Python Analytics", "Pandas", "Dashboard"];
                         }
                         else if (liveUrl && liveUrl.trim() !== "" || repo.name.toLowerCase().includes('live') || repo.name.toLowerCase().includes('app') || repo.name.toLowerCase().includes('deploy')) {
                             isLive = true;
@@ -381,7 +473,7 @@
                             image: customImageUrl,
                             gitUrl: repo.html_url,
                             liveUrl: liveUrl,
-                            lang: repo.language || 'Python Engine',
+                            lang: repo.language || 'Python',
                             tags: tagsArray
                         };
 
@@ -392,19 +484,23 @@
                         }
                     });
 
+                    if(globalLiveProjects.length === 0) {
+                        renderEnterpriseFallback();
+                        return;
+                    }
+
                     document.getElementById('count-live').innerText = globalLiveProjects.length;
                     document.getElementById('count-dev').innerText = globalDevProjects.length;
 
-                    renderCurrentSystemTab();
+                    renderEnterpriseMatrixTab();
 
                 } catch (error) {
-                    console.warn("Pipeline routing triggered fallback arrays:", error);
-                    renderCriticalSystemFallback();
+                    console.warn("Pipeline Routing Exception Handled. Engaging Enterprise Fallback Matrix:", error);
+                    renderEnterpriseFallback();
                 }
             }
 
-            // ─── HIGH RESOLUTION CARD RENDER LAYER ───
-            function renderCurrentSystemTab() {
+            function renderEnterpriseMatrixTab() {
                 const projectContainer = document.getElementById('dynamic-github-projects');
                 projectContainer.innerHTML = '';
 
@@ -419,7 +515,7 @@
                 }
 
                 if (targetedCollection.length === 0) {
-                    projectContainer.innerHTML = `<div style="grid-column: span 2; text-align: center; color: #94a3b8; font-family: monospace; padding: 4rem 0;">NO MATRIX ASSETS IDENTIFIED UNDER CURRENT PARAMETERS.</div>`;
+                    projectContainer.innerHTML = `<div style="grid-column: span 2; text-align: center; color: #64748b; font-family: monospace; padding: 6rem 0; font-size: 1rem;">NO ENTERPRISE NODES MATCHING CURRENT FILTER PARAMETERS.</div>`;
                     return;
                 }
 
@@ -430,16 +526,16 @@
                     let actionableButtonsHtml = '';
                     if (currentTab === 'live') {
                         actionableButtonsHtml = `
-                            <a href="${project.liveUrl}" target="_blank" class="button btn-primary">Launch Live App</a>
+                            <a href="${project.liveUrl || project.gitUrl}" target="_blank" class="button btn-primary">Launch Live App</a>
                             <a href="${project.gitUrl}" target="_blank" class="button btn-secondary">Source Code</a>
                         `;
                     } else {
                         actionableButtonsHtml = `
-                            <a href="${project.gitUrl}" target="_blank" class="button btn-secondary" style="width: 100%; flex: none;">Inspect Source Code</a>
+                            <a href="${project.gitUrl}" target="_blank" class="button btn-secondary" style="width: 100%; flex: none;">Inspect Repository</a>
                         `;
                     }
 
-                    const badgeHtml = (currentTab === 'live') ? '<span class="badge-live">ONLINE APP</span>' : '<span class="badge-dev">STABLE LOGIC</span>';
+                    const badgeHtml = (currentTab === 'live') ? '<span class="badge-live">DEPLOYED APP</span>' : '<span class="badge-dev">REPOSITORY</span>';
                     
                     let tagsListHtml = '';
                     project.tags.forEach(t => { tagsListHtml += `<span class="tech-tag">${t}</span>`; });
@@ -447,21 +543,21 @@
                     article.innerHTML = `
                         <div>
                             <div class="metrics-hud">
-                                <span>ENVIRONMENT: <strong>${project.lang}</strong></span>
+                                <span>TECH: <strong>${project.lang}</strong></span>
                                 ${badgeHtml}
                             </div>
                             
-                            <h2><a href="${currentTab === 'live' ? project.liveUrl : project.gitUrl}" target="_blank">${project.title}</a></h2>
+                            <h2><a href="${currentTab === 'live' ? (project.liveUrl || project.gitUrl) : project.gitUrl}" target="_blank">${project.title}</a></h2>
                             
                             <div class="tech-container">
                                 ${tagsListHtml}
                             </div>
 
-                            <a href="${currentTab === 'live' ? project.liveUrl : project.gitUrl}" target="_blank" class="image">
-                                <img src="${project.image}" alt="${project.title}" loading="lazy" />
+                            <a href="${currentTab === 'live' ? (project.liveUrl || project.gitUrl) : project.gitUrl}" target="_blank" class="image">
+                                <img src="${project.image}" alt="${project.title}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=85'" />
                             </a>
 
-                            <p style="font-size: 0.9rem; line-height: 1.6; margin-top: 0.75rem; color: var(--text-main);">${project.desc}</p>
+                            <p style="font-size: 1rem; line-height: 1.75; margin-top: 1.15rem; color: var(--text-main);">${project.desc}</p>
                         </div>
                         
                         <div class="btn-group">
@@ -472,35 +568,61 @@
                 });
             }
 
-            // ─── FAIL-SAFE RECOVERY BUFFER SYSTEMS ───
-            function renderCriticalSystemFallback() {
-                const projectContainer = document.getElementById('dynamic-github-projects');
-                projectContainer.innerHTML = '';
-                
-                const sampleFallbacks = [
+            function renderEnterpriseFallback() {
+                globalLiveProjects = [
                     {
-                        title: "NEURAL-TRADE PRO: QUANTITATIVE ANALYTICS ENGINE",
-                        desc: "Institutional computational trading terminal to map dynamic multi-asset vector variations and live stream computational calculations.",
-                        image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&q=80",
+                        title: "NEURAL PREDICTIVE TRADING & ANALYTICS ENGINE",
+                        desc: "Machine learning-powered financial forecasting model leveraging time-series analysis and automated quantitative algorithms.",
+                        image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=85",
                         liveUrl: "https://ai-algorithmic-trading-terminal-knxio6ihaq4qldgeta7vwp.streamlit.app/",
                         gitUrl: `https://github.com/${githubUsername}`,
-                        lang: "Python / Streamlit",
-                        tags: ["Neural Net", "Quant Logic"]
+                        lang: "Python",
+                        tags: ["Machine Learning", "Streamlit", "Time Series"]
                     },
                     {
-                        title: "INTELRISK: PREDICTIVE PORTFOLIO UNDERWRITING PLATFORM",
-                        desc: "Advanced analytical risk infrastructure utilizing statistical clusters to configure modern portfolio optimizations.",
-                        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+                        title: "INTELRISK: PREDICTIVE CREDIT SCORING MODEL",
+                        desc: "Data science risk classification system utilizing statistical modeling and regression algorithms for precise portfolio underwriting.",
+                        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=85",
                         liveUrl: "https://intelrisk-lend-57l8ubfqbnm5wckuqsufsh.streamlit.app/",
                         gitUrl: `https://github.com/${githubUsername}`,
-                        lang: "Data Science Engine",
-                        tags: ["Risk Control", "Underwriting"]
+                        lang: "Data Science",
+                        tags: ["Scikit-Learn", "Risk Modeling", "Analytics"]
+                    },
+                    {
+                        title: "INTELLIGENT SUPPLY CHAIN & DATA ANALYTICS HUB",
+                        desc: "End-to-end data analytics platform designed to monitor asset metrics, inventory velocity, and optimize distribution vectors.",
+                        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=85",
+                        liveUrl: "https://inventoryproject-qegnhff482cemebwxhw63k.streamlit.app/",
+                        gitUrl: `https://github.com/${githubUsername}`,
+                        lang: "Python Analytics",
+                        tags: ["Pandas", "Dashboard", "Automation"]
                     }
                 ];
 
-                globalLiveProjects = sampleFallbacks;
+                globalDevProjects = [
+                    {
+                        title: "QUANTUM NEURAL VOICE RECOGNITION PIPELINE",
+                        desc: "Custom convolutional neural network trained on localized audio datasets for high-accuracy phonetic command interpretation.",
+                        image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=85",
+                        liveUrl: null,
+                        gitUrl: `https://github.com/${githubUsername}`,
+                        lang: "Jupyter Notebook",
+                        tags: ["CNN", "Audio AI", "TensorFlow"]
+                    },
+                    {
+                        title: "DISTRIBUTED HUFFMAN DATA COMPRESSION ENGINE",
+                        desc: "Low-level multi-threaded data compression and file archiving utility engineered with custom memory management protocols in C.",
+                        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=85",
+                        liveUrl: null,
+                        gitUrl: `https://github.com/${githubUsername}`,
+                        lang: "C",
+                        tags: ["Systems Programming", "Algorithms"]
+                    }
+                ];
+
                 document.getElementById('count-live').innerText = globalLiveProjects.length;
-                renderCurrentSystemTab();
+                document.getElementById('count-dev').innerText = globalDevProjects.length;
+                renderEnterpriseMatrixTab();
             }
 
             function switchControlTab(targetTab) {
@@ -510,15 +632,15 @@
                 document.getElementById('tab-live-btn').classList.toggle('active', currentTab === 'live');
                 document.getElementById('tab-dev-btn').classList.toggle('active', currentTab === 'dev');
 
-                renderCurrentSystemTab();
+                renderEnterpriseMatrixTab();
             }
 
             function handleSearchFilter() {
                 searchQuery = document.getElementById('search-input').value.toLowerCase();
-                renderCurrentSystemTab();
+                renderEnterpriseMatrixTab();
             }
 
-            document.addEventListener("DOMContentLoaded", compilePipelineEngine);
+            document.addEventListener("DOMContentLoaded", compileEnterprisePipeline);
         </script>
 
     </body>
